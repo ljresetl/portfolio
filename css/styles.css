@@ -60,7 +60,10 @@ button {
 
 .container {
   display: flex;
-  /* margin: 0 auto; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
   min-width: 350px;
   max-width: 411px;
@@ -68,11 +71,10 @@ button {
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: rgb(76, 70, 70);
+  color: #eee9e9;
   line-height: 1.6;
   max-width: 411px;
   margin: 0 auto;
@@ -84,8 +86,7 @@ section {
 }
 
 header {
-  background-color: #0a3d62;
-  color: #fff;
+  background-color: transparent;
   text-align: center;
   padding: 32px 16px;
 }
@@ -97,7 +98,6 @@ h1 {
 
 h2 {
   font-size: 18px;
-  color: #0a3d62;
   margin-top: 24px;
 }
 
@@ -131,7 +131,6 @@ li {
 .contact a {
   display: block;
   margin-bottom: 8px;
-  color: #0a3d62;
   text-decoration: none;
   word-break: break-all;
 }
