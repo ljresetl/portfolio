@@ -1,0 +1,1605 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  background-color: transparent;
+  color: #22343d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  position: relative;
+}
+
+a,
+button,
+input,
+input::placeholder {
+  transition-duration: 250ms;
+  transition-property: color, background-color, border, box-shadow, visibility,
+    opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  padding: 15px 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 350px;
+  max-width: 411px;
+  padding: 100px 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    min-width: 1130px;
+  }
+}
+
+.menu-list,
+.auth-buttons {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .menu-list,
+  .auth-buttons {
+    display: inline-block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+.main-logo-button-svg,
+.burger-menu {
+  padding: 0;
+  border: none;
+}
+
+/* Логотип + текст PRODUCT */
+
+.main-logo-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93333;
+  color: #173a56;
+  margin-right: 154px;
+  margin-left: 8px;
+}
+
+.header-container {
+  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  justify-content: center;
+}
+
+.svg-logo {
+  background-color: transparent;
+}
+
+.burger-menu {
+  background-color: transparent;
+}
+
+/* В стилях додаємо накладку для мобільного меню */
+.mobile-menu-overlay {
+  display: none; /* Спочатку накладка прихована */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; /* Щоб вона була поверх основного контенту */
+}
+
+.mobile-menu.open ~ .mobile-menu-overlay {
+  display: block; /*Показати накладку, коли меню відкрите  */
+}
+
+/* Мобільне меню */
+.mobile-menu {
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  right: -80%; /* Початково приховане за межами екрану */
+  width: 80%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10; /* Вище накладки */
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0; /* Відкривається в межах екрану */
+}
+
+.close-mobile-menu {
+  padding: 0;
+  background-color: transparent;
+}
+
+.mobile-menu-header {
+  text-align: right;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.mobile-menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+}
+
+.sign-in-menu {
+  width: 105px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  padding: 9px 23px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.sign-in-menu:hover {
+  width: 113px;
+  height: 42px;
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-in-menu:focus {
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-up-menu {
+  width: 105px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  padding: 9px 21px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.sign-up-menu:hover {
+  width: 113px;
+  height: 42px;
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-up-menu:focus {
+  background-color: #02897a;
+  color: #fff;
+}
+
+@media screen and (min-width: 1400px) {
+  .menu-list {
+    display: flex;
+    gap: 30px;
+    margin-right: 73px;
+  }
+
+  .main-logo-text {
+    margin-right: 237px;
+    margin-left: 16px;
+  }
+
+  .menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #22343d;
+  }
+
+  .menu-link:focus {
+    font-weight: 600;
+  }
+
+  .menu-link:hover {
+    font-weight: 600;
+  }
+
+  .sign-in {
+    width: 105px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    padding: 9px 23px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+  }
+
+  .sign-in:hover {
+    width: 113px;
+    height: 42px;
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-in:focus {
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-up {
+    width: 105px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    padding: 9px 21px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+  }
+
+  .sign-up:hover {
+    width: 113px;
+    height: 42px;
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-up:focus {
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .mobile-menu-overlay,
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* Секція один Work at the speed of thought */
+.one-section-container {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.one-section-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66667;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.one-section-p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #22343d;
+  padding-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.primary {
+  border-radius: 4px;
+  width: 142px;
+  height: 53px;
+  background-color: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+
+.secondary {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #01443c;
+}
+
+.icon-triangle {
+  fill: #02897a;
+}
+
+@media screen and (min-width: 1400px) {
+  .one-section-container {
+    padding-top: 25px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    gap: 35px;
+  }
+
+  .one-section-text-knopka {
+    width: 465px;
+    height: 331px;
+  }
+
+  .one-section-h {
+    font-size: 40px;
+    height: 120px;
+    text-align: left;
+    width: 452px;
+  }
+
+  .primary {
+    width: 178px;
+    height: 53px;
+    padding: 15px 41px;
+  }
+
+  .buttons {
+    gap: 30px;
+  }
+}
+
+/* Секція два Product  was Built Specifically for You */
+
+.two-section-container {
+  padding-top: 0;
+  flex-wrap: wrap;
+}
+
+.two-section-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 50px;
+}
+
+.features-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+}
+
+.two-section-h3 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.two-section-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  margin-bottom: 24px;
+}
+
+.green {
+  background: #02897a;
+}
+
+.blue {
+  background: #4d8dff;
+}
+
+.purple {
+  background: #740a76;
+}
+
+.red {
+  background: #f03e3d;
+}
+
+.signup-btn {
+  padding: 15px 32px;
+  border-radius: 4px;
+  width: 175px;
+  height: 53px;
+  background-color: #02675a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1400px) {
+  .two-section-title {
+    max-width: 535px;
+  }
+
+  .features-wrapper {
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+
+  .feature {
+    width: 255px;
+    align-items: flex-start;
+  }
+
+  .icon-container {
+    margin-bottom: 18px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .two-section-h3 {
+    margin-bottom: 13px;
+  }
+
+  .two-section-p {
+    text-align: left;
+  }
+}
+
+/* Секція три Management */
+.tree-section-container {
+  flex-direction: column;
+  padding-top: 0;
+  gap: 50px;
+}
+
+.small-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.sub-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1400px) {
+  .tree-section-container {
+    flex-direction: row-reverse;
+    gap: 84px;
+    text-align: left;
+  }
+
+  .text-content {
+    width: 486px;
+  }
+
+  .main-title {
+    margin-bottom: 25px;
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
+}
+
+/* Секція чотири Customer Support */
+
+.four-section-container {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.four-section-li-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+.four-section-li {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Відстань між іконкою і текстом */
+  margin-bottom: 16px;
+}
+
+.icon-four-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.92px solid #fff;
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0; /* щоб іконка не зменшувалась */
+}
+
+.one {
+  background: #f90;
+}
+
+.two {
+  background: #f03e3d;
+}
+
+.tree {
+  background: #4d8dff;
+}
+
+.four-section-svg {
+  fill: #fff;
+}
+
+@media screen and (min-width: 1400px) {
+  .four-section-container {
+    flex-direction: row;
+    padding-top: 0;
+    gap: 84px;
+    text-align: left;
+  }
+
+  .four-section-content {
+    width: 550px;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .section-description {
+    margin-bottom: 30px;
+  }
+}
+
+/* Секція пьять Collaborative */
+
+.five-section-container {
+  flex-direction: column;
+  padding-top: 0;
+  gap: 50px;
+  text-align: left;
+}
+
+.photo-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.photo-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.photo-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.photo-subtitle-bold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.photo-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1400px) {
+  .five-section-container {
+    flex-direction: row-reverse;
+    gap: 84px;
+    text-align: left;
+    padding-bottom: 150px;
+  }
+
+  .photo-content {
+    width: 486px;
+  }
+
+  .photo-title {
+    margin-bottom: 25px;
+  }
+
+  .photo-description {
+    margin-bottom: 30px;
+  }
+
+  .photo-text {
+    margin-bottom: 25px;
+  }
+}
+
+/* Секція шість Quick & Easy Process */
+
+.process-container {
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.process-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.process-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 40px;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 15px;
+}
+
+.process-item-block-one {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.process-item-block-two {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.process-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.process-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #2f281e;
+}
+
+.process-btn {
+  background: #02897a;
+  border-radius: 4px;
+  width: 216px;
+  height: 53px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+@media screen and (min-width: 1400px) {
+  .process-title {
+    margin-bottom: 25px;
+  }
+
+  .process-description {
+    width: 542px;
+  }
+
+  .process-list {
+    flex-direction: row;
+    gap: 100px;
+    max-width: 916px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .process-item-block-two,
+  .process-item-block-one {
+    width: 408px;
+  }
+
+  .process-item-block-two {
+    flex-direction: column-reverse;
+  }
+
+  .process-item {
+    gap: 20px;
+  }
+
+  .process-text {
+    padding: 13px 20px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 39px 39px 78px #acacac, -39px -39px 78px #ffffff;
+  }
+}
+
+/* Секція сім Contents Strategies */
+
+.content-container {
+  flex-direction: column;
+}
+
+.content-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.content-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 40px;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.content-img {
+  margin-bottom: 24px;
+}
+
+.content-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.content-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #22343d;
+}
+
+@media screen and (min-width: 1400px) {
+  .content-container {
+    padding-top: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .content-title {
+    margin-bottom: 10px;
+  }
+
+  .content-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .content-description {
+    width: 465px;
+    text-align: left;
+  }
+
+  .content-author {
+    margin-bottom: 12px;
+  }
+
+  .content-item {
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 27px 27px 53px #d3d3d3, -27px -27px 53px #ededed;
+  }
+
+  .content-heading {
+    max-width: 296px;
+  }
+}
+
+/* Секція вісім Price Table */
+
+.pricing-container {
+  flex-direction: column;
+  padding-top: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pricing-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.pricing-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 74px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.pricing-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.pricing-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.pricing-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.pricing-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.plan {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.31579;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column; /* Розташовує знак долара над "Per / month" */
+  align-items: flex-start; /* Вирівнює текст по лівому краю */
+}
+
+.dollar-standard-plan-svg {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  fill: #02897a;
+}
+
+.pricing-duration {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  color: #4d4d4d;
+}
+
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.pricing-btn {
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+  background-color: #026d60;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  padding: 11px 18px;
+  margin-bottom: 32px;
+}
+
+/* Наведення: фон змінюється на зелений */
+.pricing-card:hover {
+  background: #2b7a4b;
+  color: white;
+}
+
+/* Наведення: змінюється колір тексту */
+.pricing-card:hover .pricing-desc,
+.pricing-card:hover .pricing-name,
+.pricing-card:hover .plan {
+  color: #ffffff;
+}
+
+.pricing-card:hover .pricing-duration {
+  color: #e0e0e0;
+}
+
+/* Наведення: змінюється колір іконки */
+.pricing-card:hover .icon-standard-plan-svg svg {
+  fill: white;
+}
+
+/* Наведення: змінюється колір значка $ */
+.pricing-card:hover .dollar-standard-plan-svg svg {
+  fill: white;
+}
+
+/* Наведення: змінюється колір тексту */
+.pricing-card:hover .pricing-duration {
+  color: white;
+}
+
+/* Наведення: змінюється колір тексту фіч */
+.pricing-card:hover .pricing-features li {
+  color: white;
+}
+
+/* При наведенні на карточку кнопка стає зеленою */
+.pricing-card:hover .pricing-btn {
+  background: white;
+  color: #2b7a4b;
+}
+
+@media screen and (min-width: 1400px) {
+  .pricing-container {
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    gap: 72px;
+    justify-content: space-between;
+  }
+
+  .pricing-card {
+    width: 322px;
+    height: 456px;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #f6f6f6;
+  }
+
+  .pricing-title {
+    margin-bottom: 10px;
+  }
+
+  .pricing-subtitle {
+    margin-bottom: 40px;
+  }
+
+  .pricing-value {
+    gap: 7px;
+  }
+
+  .dollar-standard-plan-svg {
+    margin-bottom: 4px;
+  }
+
+  .plan {
+    margin-bottom: 16px;
+  }
+
+  .pricing-features {
+    margin-bottom: 30px;
+  }
+}
+
+/* Секція девять What Clients Say */
+
+.reviews-container {
+  flex-direction: column;
+}
+
+.reviews-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.67647;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.reviews-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 32px;
+  max-width: 323px;
+}
+
+.break-mobile {
+  display: block;
+}
+.break-desktop {
+  display: inline;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.star-icon {
+  max-width: 19px;
+  max-height: 19px;
+  fill: #f3cd03;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #32454f;
+}
+
+.review-author {
+  display: flex;
+  align-items: center; /* Вирівнюємо елементи по вертикалі */
+  gap: 14px; /* Відступ між фото та текстом */
+}
+
+.review-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #01443c;
+}
+
+.review-position {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+
+.review-name:focus {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .reviews-title {
+    margin-bottom: 10px;
+    line-height: 1.78125;
+  }
+
+  .reviews-subtitle {
+    margin-bottom: 40px;
+    max-width: 537px;
+  }
+
+  .break-mobile {
+    display: inline;
+  }
+  .break-desktop {
+    display: block;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .review-card {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    width: 327px;
+    height: 240px;
+    background-color: #fff;
+  }
+}
+
+/* Секція десять Join 100 Compannies who boost their business with Product */
+
+.boost-container {
+  flex-direction: column;
+  background-color: #02897a;
+  border-radius: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 32px;
+}
+
+.boost-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  text-align: center;
+  color: #fff;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 72px;
+}
+
+.boost-btn {
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  padding: 10px 34px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1400px) {
+  .boost-container {
+    flex-direction: row;
+    min-width: 968px;
+    gap: 84px;
+    min-height: 345px;
+  }
+
+  .boost-title-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boost-title {
+    text-align: left;
+    max-width: 436px;
+    margin-bottom: 46px;
+    padding: 0;
+  }
+
+  .boost-btn {
+    margin-bottom: 0;
+  }
+}
+
+/* Секція одинадцять ФУТЕР */
+
+.footer-container {
+  flex-direction: column;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 45px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.social-icon {
+  background-color: transparent;
+  stroke: #02897a;
+  fill: #edfffc;
+  border: none;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 32px;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.footer-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #22343d;
+}
+
+.footer-menu-li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.1875;
+  text-align: center;
+  color: #22343d;
+}
+
+.footer-nav {
+  margin-bottom: 32px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 34px;
+  width: 280px;
+}
+
+.footer-signup {
+  display: flex;
+  align-items: center;
+  width: 325px;
+  height: 48px;
+  margin-bottom: 21px;
+}
+
+.footer-input {
+  width: 100%;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #6b7b93;
+  align-items: center;
+  border: 1px solid #6b7b93;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+}
+
+.footer-signup-mob {
+  display: none;
+}
+
+.footer-signup-icon {
+  display: none;
+}
+
+.footer-btn {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 131px;
+  height: 39px;
+  background-color: #02897a;
+  padding: 7px 15px;
+  margin-bottom: 44px;
+}
+
+.footer-text-two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  color: #22343d;
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .logo-socials {
+    display: flex;
+    flex-direction: column;
+    margin-right: 146px;
+    gap: 18px;
+  }
+
+  .footer-logo {
+    gap: 16px;
+    margin-bottom: 0;
+  }
+
+  .footer-socials {
+    margin-bottom: 0;
+    gap: 16px;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 129px;
+    align-items: flex-start;
+  }
+
+  .footer-menu-li {
+    text-align: left;
+  }
+
+  .footer-nav-two {
+    margin-right: 83px;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .footer-text {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .footer-btn {
+    margin-bottom: 0;
+  }
+
+  .footer-signup {
+    display: none;
+  }
+
+  .footer-signup-mob {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 325px;
+    height: 48px;
+    margin-bottom: 21px;
+  }
+
+  .footer-input-mob {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Додаємо відступ справа */
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #02897a;
+    align-items: center;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+  }
+
+  .footer-signup-icon-mob {
+    display: block; /* Показуємо іконку на десктопі */
+    position: absolute;
+    left: 10px; /* Розміщуємо іконку ліворуч */
+    fill: #02897a;
+  }
+}
+
+/* Стрілки для прокручування */
+
+.scroll-buttons {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  z-index: 1000;
+}
+
+.scroll-btn {
+  background-color: transparent;
+  color: #02897a;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: transparent;
+}

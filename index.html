@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find tools, tutorials, and design experts in one place to create your next intuitive user experience. Innovation made simple!"
+    />
+
+    <title>PRODUCT</title>
+    <!-- Підключення нормалізації стилів -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Підключення шрифтів Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Підключення шрифтів (Poppins, Raleway, Roboto) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="styles.css"
+      media="print"
+      onload="this.media='all'"
+    /> -->
+  </head>
+
+  <body>
+    <header class="Product - Business in life">
+      <div class="container header-container">
+        <!-- Логотип + текст PRODUCT -->
+        <div class="logo">
+          <button
+            type="button"
+            class="main-logo-button-svg"
+            title="logo"
+            id="buttonlogo"
+            aria-label="buttonlogo"
+          >
+            <svg class="svg-logo" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </button>
+          <a href="./index.html" class="main-logo-text">Product</a>
+        </div>
+
+        <!-- Навігація -->
+        <nav class="menu">
+          <ul class="menu-list">
+            <li><a href="./index.html" class="menu-link">Product</a></li>
+            <li><a href="#pricing" class="menu-link">Pricing</a></li>
+            <li><a href="#customers" class="menu-link">Customers</a></li>
+            <li><a href="#resources" class="menu-link">Resources</a></li>
+          </ul>
+        </nav>
+
+        <!-- Кнопки входу -->
+        <div class="auth-buttons">
+          <button type="button" class="sign-in" aria-label="sign-in">
+            Sign In
+          </button>
+          <button type="button" class="sign-up" aria-label="sign-up">
+            Sign Up
+          </button>
+        </div>
+        <!-- Бургер-меню -->
+        <button
+          type="button"
+          class="burger-menu"
+          title="burger"
+          id="button-burger"
+          aria-label="button-burger"
+        >
+          <svg class="burger-menu-icon" width="28" height="31">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- Мобільне меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <!-- Додано накладку -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <button
+          type="button"
+          class="close-mobile-menu"
+          id="closeMobileMenu"
+          aria-label="mobile-menu-btn"
+        >
+          <svg width="24" height="24">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="12"
+              heigth="12"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><a href="./index.html" class="mobile-menu-link">Product</a></li>
+        <li><a href="#pricing" class="mobile-menu-link">Pricing</a></li>
+        <li><a href="#customers" class="mobile-menu-link">Customers</a></li>
+        <li><a href="#resources" class="mobile-menu-link">Resources</a></li>
+      </ul>
+      <div class="mobile-auth-buttons">
+        <button type="button" class="sign-in-menu" aria-label="Open">
+          Sign In
+        </button>
+        <button type="button" class="sign-up-menu" aria-label="Registration">
+          Sign Up
+        </button>
+      </div>
+    </div>
+
+    <!-- Підключення JS -->
+    <script src="script.js" defer></script>
+
+    <main>
+      <!-- Секція один Work at the speed of thought-->
+
+      <div class="Work at the speed">
+        <div class="container one-section-container">
+          <div class="one-section-image-container">
+            <picture>
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/amico(width1400).jpg   1x,
+                  ./images/amico(width1400)2x.jpg 2x
+                "
+                media="(min-width: 1140px)"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="./images/amico(tel).jpg 1x, ./images/amico2xtel.jpg 2x"
+                media="(max-width: 411px)"
+              />
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/amico(tel)1.jpg"
+                alt="Amico Image"
+                width="338"
+                height="310"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="one-section-text-knopka">
+            <div class="one-section-text">
+              <h2 class="one-section-h">Work at the speed of thought</h2>
+              <p class="one-section-p">
+                Tools, tutorials, design and innovation experts, all in one
+                place! The most intuitive way to imagine your next user
+                experience.
+              </p>
+            </div>
+            <div class="buttons">
+              <button
+                type="button"
+                href="#"
+                class="btn primary"
+                aria-label="Get started"
+              >
+                Get started
+              </button>
+              <a href="#" class="btn secondary" aria-label="Watch the Video">
+                <svg class="icon-triangle" width="20" height="17">
+                  <use href="./images/icons.svg#icon-Triangle"></use>
+                </svg>
+                Watch the Video</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Секція два Product  was Built Specifically for You -->
+
+      <section class="Product was Built Specifically for You">
+        <div class="container two-section-container">
+          <h2 class="two-section-title">
+            Product was Built Specifically for You
+          </h2>
+          <div class="features-wrapper">
+            <div class="feature">
+              <div class="icon-container green">
+                <svg class="green-svg" width="12" height="18">
+                  <use href="./images/icons.svg#icon-green"></use>
+                </svg>
+              </div>
+              <h3 class="two-section-h3">First click tests</h3>
+              <p class="two-section-p">
+                While most people enjoy casino gambling.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="icon-container blue">
+                <svg class="blue-svg" width="18" height="18">
+                  <use href="./images/icons.svg#icon-blue"></use>
+                </svg>
+              </div>
+              <h3 class="two-section-h3">Design surveys</h3>
+              <p class="two-section-p">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="icon-container purple">
+                <svg class="heart-svg" width="16" height="18">
+                  <use href="./images/icons.svg#icon-heart"></use>
+                </svg>
+              </div>
+              <h3 class="two-section-h3">Preference tests</h3>
+              <p class="two-section-p">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="icon-container red">
+                <svg class="timer-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-timer"></use>
+                </svg>
+              </div>
+              <h3 class="two-section-h3">Five second tests</h3>
+              <p class="two-section-p">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="button" class="signup-btn" aria-label="Registration">
+              SIGN UP NOW
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція три Management -->
+
+      <section class="Validation for Management">
+        <div class="container tree-section-container">
+          <div class="tree-section-image">
+            <picture>
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/Management(width1400).jpg   1x,
+                  ./images/Management(width1400)2x.jpg 2x
+                "
+                media="(min-width: 1140px)"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="
+                  ./images/Management(tel).jpg   1x,
+                  ./images/Management(tel)2x.jpg 2x
+                "
+                media="(max-width: 411px)"
+              />
+
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/Management(tel)png.png"
+                alt="Illustration"
+                width="540"
+                height="500"
+              />
+            </picture>
+          </div>
+
+          <div class="text-content">
+            <p class="small-title">Effortless Validation for</p>
+            <h2 class="main-title">Management</h2>
+
+            <p class="description">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+
+            <h3 class="sub-title">Accessory makers</h3>
+            <p class="sub-text sub-text-one">
+              While most people enjoy casino gambling, sports betting, lottery
+              and
+            </p>
+
+            <h3 class="sub-title">Alterationists</h3>
+            <p class="sub-text">
+              If you are looking for a new way to promote your business that
+              won’t cost
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція чотири Customer Support -->
+
+      <section class="Making for Customer Support" id="customers">
+        <div class="container four-section-container">
+          <div class="four-section-image">
+            <picture>
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/Customer-Support-width1400.jpg    1x,
+                  ./images/Customer-Support-width1400-2x.jpg 2x
+                "
+                media="(min-width: 1140px)"
+                width="540"
+                height="500"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="
+                  ./images/Customer-Support-tel.png    1x,
+                  ./images/Customer-Support-tel-2x.png 2x
+                "
+                media="(max-width: 411px)"
+                width="350"
+                height="320"
+              />
+
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/Customer-Support-tel.png"
+                alt="Laptop with magnifier"
+              />
+            </picture>
+          </div>
+          <div class="four-section-content">
+            <p class="section-subtitle">Easier decision making for</p>
+            <h2 class="section-title">Customer Support</h2>
+            <p class="section-description">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <!-- <div class="icon-div"> -->
+            <ul class="support-benefits">
+              <li class="four-section-li">
+                <div class="icon-four-section one">
+                  <svg class="four-section-svg" width="16" height="12">
+                    <use href="./images/icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="four-section-li-p">
+                  Never worry about overpaying for your energy again.
+                </p>
+              </li>
+              <li class="four-section-li">
+                <div class="icon-four-section two">
+                  <svg class="four-section-svg" width="16" height="12">
+                    <use href="./images/icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="four-section-li-p">
+                  We will only switch you to energy companies that we trust and
+                  will treat you right.
+                </p>
+              </li>
+              <li class="four-section-li four-section-li-three">
+                <div class="icon-four-section tree">
+                  <svg class="four-section-svg" width="16" height="12">
+                    <use href="./images/icons.svg#icon-tick"></use>
+                  </svg>
+                </div>
+                <p class="four-section-li-p">
+                  We track the markets daily and know where the savings are.
+                </p>
+              </li>
+            </ul>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція пьять Collaborative -->
+
+      <section class="Optimisation for Collaborative">
+        <div class="container five-section-container">
+          <div class="photo-image">
+            <picture>
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/Collaborative-width14001x.jpg 1x,
+                  ./images/Collaborative-width14002x.jpg 2x
+                "
+                media="(min-width: 1140px)"
+                width="540"
+                height="500"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="
+                  ./images/Collaborative-width411(1x).jpg 1x,
+                  ./images/Collaborative-width411(2x).jpg 2x
+                "
+                media="(max-width: 411px)"
+                width="350"
+                height="292"
+              />
+
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/Collaborative(tel)png.png"
+                alt="Illustration of files and folders"
+              />
+            </picture>
+          </div>
+          <div class="photo-content">
+            <p class="photo-subtitle">Optimisation for</p>
+            <h2 class="photo-title">Collaborative</h2>
+            <p class="photo-description">
+              Few would argue that, despite the advancements of feminism over
+              the past three decades, women still face a double standard when it
+              comes to their behavior.
+            </p>
+
+            <h3 class="photo-subtitle-bold">Accessory makers</h3>
+            <p class="photo-text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun.
+            </p>
+
+            <h3 class="photo-subtitle-bold">Alterationists</h3>
+            <p class="photo-text photo-text-two">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція шість Quick & Easy Process -->
+
+      <section class="Conception workshop">
+        <div class="container process-container">
+          <h2 class="process-title">Quick & Easy Process</h2>
+          <p class="process-description">
+            Do you require some help for your project: Conception workshop,
+            prototyping, marketing strategy, landing page, Ux/UI?
+          </p>
+
+          <div class="process-list">
+            <div class="process-item-block-one">
+              <div class="process-item">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/avator(1)-width1400(1x).png 1x,
+                      ./images/avator(1)-width1400(2x).png 2x
+                    "
+                    media="(min-width: 1140px)"
+                    width="98"
+                    height="98"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(1)-width411(1x).png 1x,
+                      ./images/Avator(1)-width411(2x).png 2x
+                    "
+                    media="(max-width: 411px)"
+                    width="90"
+                    height="90"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Avator (1)tel.jpg"
+                    alt="Person 1"
+                    class="process-img red-border"
+                    width="90"
+                    height="90"
+                  />
+                </picture>
+
+                <p class="process-text">I can take care of your pitch</p>
+              </div>
+
+              <div class="process-item process-item-avator-two">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(2)-width1400(1x).png 1x,
+                      ./images/Avator(2)-width1400(2x).png 2x
+                    "
+                    media="(min-width: 1140px)"
+                    width="98"
+                    height="98"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(2)-width411(1x).png 1x,
+                      ./images/Avator(2)-width411(2x).png 2x
+                    "
+                    media="(max-width: 411px)"
+                    width="90"
+                    height="90"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Avator (2)tel.jpg"
+                    alt="Person 2"
+                    class="process-img blue-border"
+                    width="90"
+                    height="90"
+                  />
+                </picture>
+
+                <p class="process-text">I can design you website</p>
+              </div>
+            </div>
+            <div class="process-item-block-two">
+              <div class="process-item process-item-avator-tree">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(3)-width1400(1x).png 1x,
+                      ./images/Avator(3)-width1400(2x).png 2x
+                    "
+                    media="(min-width: 1140px)"
+                    width="98"
+                    height="98"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(3)-width411(1x).png 1x,
+                      ./images/Avator(3)-width411(2x).png 2x
+                    "
+                    media="(max-width: 411px)"
+                    width="90"
+                    height="90"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Avator (3)tel.jpg"
+                    alt="Person 3"
+                    class="process-img green-border"
+                    width="90"
+                    height="90"
+                  />
+                </picture>
+
+                <p class="process-text">I can help marketing strategy</p>
+              </div>
+
+              <div class="process-item">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(4)-width1400(1x).png 1x,
+                      ./images/Avator(4)-width1400(2x).png 2x
+                    "
+                    media="(min-width: 1140px)"
+                    width="98"
+                    height="98"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Avator(4)-width411(1x).png 1x,
+                      ./images/Avator(4)-width411(2x).png 2x
+                    "
+                    media="(max-width: 411px)"
+                    width="90"
+                    height="90"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Avator (4)tel.jpg"
+                    alt="Person 4"
+                    class="process-img purple-border"
+                    width="90"
+                    height="90"
+                  />
+                </picture>
+
+                <p class="process-text">I can prototype your app</p>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="process-btn">Contact our expert</button>
+        </div>
+      </section>
+
+      <!-- Секція сім Contents Strategies -->
+
+      <section class="Contents Strategies">
+        <div class="container content-container">
+          <h2 class="content-title">Contents Strategies</h2>
+          <p class="content-description">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+
+          <div class="content-list">
+            <!-- Перша стаття -->
+            <article class="content-item">
+              <picture>
+                <!-- Для великих екранів (1400px) -->
+                <source
+                  srcset="
+                    ./images/process-section1(width1400)1x.jpg 1x,
+                    ./images/process-section1(width1400)2x.jpg 2x
+                  "
+                  media="(min-width: 1140px)"
+                />
+
+                <!-- Для маленьких екранів (411px) -->
+                <source
+                  srcset="
+                    ./images/process-section1(width411)1x.jpg 1x,
+                    ./images/process-section1(width411)2x.jpg 2x
+                  "
+                  media="(max-width: 411px)"
+                />
+
+                <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                <img
+                  src="./images/process-section1(tel)png1.png"
+                  alt="People working on laptops"
+                  class="content-img"
+                  width="350"
+                  height="185"
+                />
+              </picture>
+
+              <div class="content-info">
+                <p class="content-author">
+                  By <strong class="strong">Wahid Ari</strong> | 03 March 2019
+                </p>
+                <h3 class="content-heading">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </article>
+
+            <!-- Друга стаття -->
+            <article class="content-item">
+              <picture>
+                <!-- Для великих екранів (1400px) -->
+                <source
+                  srcset="
+                    ./images/process-section2(width1400)1x.jpg 1x,
+                    ./images/process-section2(width1400)2x.jpg 2x
+                  "
+                  media="(min-width: 1140px)"
+                />
+
+                <!-- Для маленьких екранів (411px) -->
+                <source
+                  srcset="
+                    ./images/process-section2(width411)1x.jpg 1x,
+                    ./images/process-section2(width411)2x.jpg 2x
+                  "
+                  media="(max-width: 411px)"
+                />
+
+                <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                <img
+                  src="./images/process-section2(tel).jpg"
+                  alt="People walking in city"
+                  class="content-img"
+                  width="350"
+                  height="185"
+                />
+              </picture>
+
+              <div class="content-info">
+                <p class="content-author">
+                  By <strong class="strong">Wahid Ari</strong> | 03 March 2019
+                </p>
+                <h3 class="content-heading">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </article>
+
+            <!-- Третя стаття -->
+            <article class="content-item">
+              <picture>
+                <!-- Для великих екранів (1400px) -->
+                <source
+                  srcset="
+                    ./images/process-section3(width1400)1x.jpg 1x,
+                    ./images/process-section3(width1400)2x.jpg 2x
+                  "
+                  media="(min-width: 1140px)"
+                />
+
+                <!-- Для маленьких екранів (411px) -->
+                <source
+                  srcset="
+                    ./images/process-section3(width411)1x.jpg 1x,
+                    ./images/process-section3(width411)2x.jpg 2x
+                  "
+                  media="(max-width: 411px)"
+                />
+
+                <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                <img
+                  src="./images/process-section3(tel)png1.png"
+                  alt="Modern buildings"
+                  class="content-img"
+                  width="350"
+                  height="185"
+                />
+              </picture>
+
+              <div class="content-info">
+                <p class="content-author">
+                  By <strong class="strong">Wahid Ari</strong> | 03 March 2019
+                </p>
+                <h3 class="content-heading">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція вісім Price Table -->
+
+      <section class="Price Table" id="pricing">
+        <div class="container pricing-container">
+          <h2 class="pricing-title">Price Table</h2>
+          <p class="pricing-subtitle">We offer competitive price</p>
+
+          <div class="pricing-list">
+            <!-- Free Plan -->
+            <div class="pricing-card">
+              <h3 class="pricing-name">Free</h3>
+              <p class="pricing-desc">Brief price description</p>
+              <div class="pricing-value">
+                <div class="box-all-plan">
+                  <span class="plan">0</span>
+                  <!-- <svg class="standard-plan-svg" width="50" height="100">
+                            <use href="./images/icons.svg#icon-0"></use>
+                        </svg> -->
+                </div>
+                <div class="price-container">
+                  <div class="dollar-standard-plan-svg">
+                    <svg class="dollar-plan-svg" width="16" height="29">
+                      <use href="./images/icons.svg#icon-Dollar"></use>
+                    </svg>
+                  </div>
+
+                  <p class="pricing-duration">Per / month</p>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li>Only 2 Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button
+                type="button"
+                class="pricing-btn"
+                aria-label="pricing-btn"
+              >
+                Order Now
+              </button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="pricing-card">
+              <h3 class="pricing-name">Standard</h3>
+              <p class="pricing-desc">Brief price description</p>
+              <div class="pricing-value">
+                <div class="box-all-plan">
+                  <span class="plan">5</span>
+                  <!-- 
+                        <svg class="standard-plan-svg" width="50" height="100">
+                            <use href="./images/icons.svg#icon-5"></use>
+                        </svg> -->
+                </div>
+                <div class="price-container">
+                  <div class="dollar-standard-plan-svg">
+                    <svg class="dollar-plan-svg" width="16" height="29">
+                      <use href="./images/icons.svg#icon-Dollar"></use>
+                    </svg>
+                  </div>
+                  <p class="pricing-duration">Per / month</p>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li>5+ Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button
+                type="button"
+                class="pricing-btn"
+                aria-label="pricing-btn"
+              >
+                Order Now
+              </button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+              <h3 class="pricing-name">Premium</h3>
+              <p class="pricing-desc">Brief price description</p>
+              <div class="pricing-value">
+                <div class="box-all-plan">
+                  <span class="plan">10</span>
+                  <!-- <svg class="standard-plan-svg" width="79" height="100">
+                            <use href="./images/icons.svg#icon-10"></use>
+                        </svg> -->
+                </div>
+                <div class="price-container">
+                  <div class="dollar-standard-plan-svg">
+                    <svg class="dollar-plan-svg" width="16" height="29">
+                      <use href="./images/icons.svg#icon-Dollar"></use>
+                    </svg>
+                  </div>
+
+                  <p class="pricing-duration">Per / month</p>
+                </div>
+              </div>
+              <ul class="pricing-features">
+                <li>10+ Operators</li>
+                <li>Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+              <button
+                type="button"
+                class="pricing-btn"
+                aria-label="pricing-btn"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція девять What Clients Say -->
+
+      <section class="Product helps">
+        <div class="container reviews-container">
+          <h2 class="reviews-title">What Clients Say</h2>
+
+          <p class="reviews-subtitle">
+            Problems trying to resolve the conflict<span
+              class="break-mobile"
+            ></span>
+            between<span class="break-desktop"></span> the two major realms of
+            Classical physics: Newtonian mechanics
+          </p>
+
+          <div class="reviews-list">
+            <!-- Відгук 1 -->
+            <div class="review-card">
+              <div class="review-stars">
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-2"></use>
+                </svg>
+              </div>
+              <p class="review-text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="review-author">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Warda-Aria-width1400(1x).jpg 1x,
+                      ./images/Warda-Aria-width1400(2x).jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Warda-Aria-width411(1x).jpg 1x,
+                      ./images/Warda-Aria-width411(2x).jpg 2x
+                    "
+                    media="(max-width: 411px)"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Warda-Aria.png"
+                    alt="Client 1"
+                    class="review-img"
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+
+                <div class="review-info">
+                  <p class="review-name">Warda Aria</p>
+                  <p class="review-position">Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Відгук 2 -->
+            <div class="review-card">
+              <div class="review-stars">
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-2"></use>
+                </svg>
+              </div>
+              <p class="review-text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="review-author">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Wahid-Ari-width1400(1x).jpg 1x,
+                      ./images/Wahid-Ari-width1400(2x).jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Wahid-Ari-width411(1x).jpg 1x,
+                      ./images/Wahid-Ari-width411(2x).jpg 2x
+                    "
+                    media="(max-width: 411px)"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Wahid-Ari.png"
+                    alt="Client 2"
+                    class="review-img"
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+
+                <div class="review-info">
+                  <p class="review-name">Wahid Ari</p>
+                  <p class="review-position">FrontEnd</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Відгук 3 -->
+            <div class="review-card">
+              <div class="review-stars">
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-1"></use>
+                </svg>
+                <svg class="star-icon">
+                  <use href="./images/icons.svg#icon-star-mob-2"></use>
+                </svg>
+              </div>
+              <p class="review-text">
+                Product helps you see how many more days you need to work to
+                reach your financial goal.
+              </p>
+              <div class="review-author">
+                <picture>
+                  <!-- Для великих екранів (1400px) -->
+                  <source
+                    srcset="
+                      ./images/Arif-Wahab-width1400(1x).jpg 1x,
+                      ./images/Arif-Wahab-width1400(2x).jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                  />
+
+                  <!-- Для маленьких екранів (411px) -->
+                  <source
+                    srcset="
+                      ./images/Arif-Wahab-width411(1x).jpg 1x,
+                      ./images/Arif-Wahab-width411(2x).jpg 2x
+                    "
+                    media="(max-width: 411px)"
+                  />
+
+                  <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+                  <img
+                    src="./images/Arif-Wahab-width411(1x).jpg"
+                    alt="Client 3"
+                    class="review-img"
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+
+                <div class="review-info">
+                  <p class="review-name">Arif Wahab</p>
+                  <p class="review-position">Analys</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція десять Join 100 Compannies who boost their business with Product -->
+
+      <section class="Business with Product">
+        <div class="container boost-container">
+          <div class="boost-title-button">
+            <h2 class="boost-title">
+              Join 100 Companies who boost their business with Product
+            </h2>
+            <button type="button" class="boost-btn" aria-label="boost-btn">
+              Get This
+            </button>
+          </div>
+          <div class="boost-images">
+            <picture>
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/Join100-width1400(1x).png 1x,
+                  ./images/Join100-width1400(2x).png 2x
+                "
+                media="(min-width: 1140px)"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="
+                  ./images/Join100-width411(1x)png.png 1x,
+                  ./images/Join100-width411(2x)png.png 2x
+                "
+                media="(max-width: 411px)"
+              />
+
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/Join100-width411(1x)png.png"
+                alt="Analytics Chart"
+                class="boost-main-img"
+                width="351"
+                height="331"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція одинадцять ФУТЕР -->
+
+      <footer class="Product best energy deal" id="resources">
+        <div class="container footer-container">
+          <div class="logo-socials">
+            <div class="footer-logo">
+              <svg class="footer-logo-svg" width="30" height="30">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+              <h2 class="main-logo-foter">Product</h2>
+            </div>
+
+            <div class="footer-socials">
+              <a
+                href="https://instagram.com"
+                class="footer-social-link"
+                aria-label="Instagram"
+                target="_blank"
+              >
+                <svg class="social-icon inst" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-business"></use>
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com"
+                class="footer-social-link"
+                aria-label="Facebook"
+                target="_blank"
+              >
+                <svg class="social-icon face" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-business"></use>
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com"
+                class="footer-social-link"
+                aria-label="Twitter"
+                target="_blank"
+              >
+                <svg class="social-icon twit" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twiter-business"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Навігація -->
+          <div class="footer-nav">
+            <h3 class="footer-heading">Resource</h3>
+            <ul class="footer-menu">
+              <li class="footer-menu-li"><a href="#">About Us</a></li>
+              <li class="footer-menu-li"><a href="#">Blog</a></li>
+              <li class="footer-menu-li"><a href="#">Contact</a></li>
+              <li class="footer-menu-li"><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav footer-nav-two">
+            <h3 class="footer-heading">Legal Stuff</h3>
+            <ul class="footer-menu">
+              <li class="footer-menu-li"><a href="#">Disclaimer</a></li>
+              <li class="footer-menu-li"><a href="#">Financing</a></li>
+              <li class="footer-menu-li"><a href="#">Privacy Policy</a></li>
+              <li class="footer-menu-li"><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-text">
+              Knowing you're always on the best energy deal.
+            </p>
+
+            <div class="footer-signup">
+              <input
+                type="email"
+                class="footer-input"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="footer-signup-mob">
+              <svg class="footer-signup-icon-mob" width="18" height="28">
+                <use href="./images/icons.svg#icon-mobile-screen"></use>
+              </svg>
+              <input
+                type="tel"
+                class="footer-input-mob"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <button type="button" class="footer-btn">Sign up Now</button>
+          </div>
+
+          <p class="footer-text-two">
+            Made With Love By Product All Right Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <div class="scroll-buttons">
+      <button type="button" class="scroll-btn up" aria-label="Scroll to top">
+        ↑
+      </button>
+      <button
+        type="button"
+        class="scroll-btn down"
+        aria-label="Scroll to bottom"
+      >
+        ↓
+      </button>
+    </div>
+  </body>
+</html>
