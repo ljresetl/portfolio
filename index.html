@@ -3,27 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо Fullstack Developer</title>
+    <title>Portfolio Fullstack Developer</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <section class="container">
-      <header class="fullstack">
-        <div class="header-fullstack">
-          <h1>Fullstack Developer</h1>
+      <header class="section-header">
+        <!-- Логотип + текст PRODUCT -->
+       <div class="container container-header">
+          <div class="logo">
+            <button
+              type="button"
+              class="main-logo-button-svg"
+              title="logo"
+              id="buttonlogo"
+              aria-label="buttonlogo"
+            >
+              <svg class="svg-logo" width="40" height="36">
+                <use href="./images/icons.svg#icon-fullstack1"></use>
+              </svg>
+            </button>
+            <a href="./index.html" class="main-logo-text">Fullstack</a>
           </div>
+  
+          <!-- Навігація -->
+          <nav class="menu">
+            <ul class="menu-list">
+              <li><a href="./index.html" class="menu-link">Product</a></li>
+              <li><a href="#pricing" class="menu-link">Pricing</a></li>
+              <li><a href="#customers" class="menu-link">Customers</a></li>
+              <li><a href="#resources" class="menu-link">Resources</a></li>
+            </ul>
+          </nav>
+  
+          <!-- Кнопки входу -->
+          <div class="auth-buttons">
+            <button type="button" class="sign-in" aria-label="sign-in">
+              Sign In
+            </button>
+            <button type="button" class="sign-up" aria-label="sign-up">
+              Sign Up
+            </button>
+          </div>
+          <!-- Бургер-меню -->
+          <button
+            type="button"
+            class="burger-menu"
+            title="burger"
+            id="button-burger"
+            aria-label="button-burger"
+          >
+            <svg class="burger-menu-icon" width="28" height="31">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+       </div>
       </header>
-    </section>
-    <section class="container">
-          <h2>
-            Привіт! Я — починаючий Fullstack Developer Створюю сучасні сайти,
-            верстаю з макетів у Figma та розвиваюся в розробці веб-додатків
-          </h2>
+      <main>
+
+<section class="main-foto">
+  <div class="container container-main-foto">
+<h1>Fullstack Developer</h1>
+  </div>
+</section>
+
+    <section class="section-one">
+                <div class="container container-section-one">
+<div>
+            <h2>
+              Привіт! Я — починаючий Fullstack Developer Створюю сучасні сайти,
+              верстаю з макетів Figma та розвиваюся в розробці веб-додатків
+            </h2>
+</div>
+          <div class="one-section-image-container">
+            <picture> фото на тему фулстек має бути
+              <!-- Для великих екранів (1400px) -->
+              <source
+                srcset="
+                  ./images/amico(width1400).jpg   1x,
+                  ./images/amico(width1400)2x.jpg 2x
+                "
+                media="(min-width: 1140px)"
+              />
+
+              <!-- Для маленьких екранів (411px) -->
+              <source
+                srcset="./images/amico(tel).jpg 1x, ./images/amico2xtel.jpg 2x"
+                media="(max-width: 411px)"
+              />
+              <!-- Запасне зображення (для випадків, коли браузер не підтримує `picture`) -->
+              <img
+                src="./images/amico(tel)1.jpg"
+                alt="Amico Image"
+                width="338"
+                height="310"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
     </section>
 
-    <section class="container">
-      <div>
+    <section class="section-two">
+      <div class="container container-section-two">
         <h2>Про мене</h2>
         <p>
           Мене звати Віталій. Я проходжу курси Fullstack Developer і вже
@@ -33,9 +115,10 @@
       </div>
     </section>
 
-    <section class="container">
-      <h2>Навички</h2>
-      <div>
+    <section class="section-three">
+      
+      <div class="container container-section-three">
+        <h2>Навички</h2>
         <ul>
           <li>
             <strong>Фронтенд:</strong> HTML5, CSS3, JavaScript, адаптивна
@@ -50,43 +133,80 @@
       </div>
     </section>
 
-<section class="container">
-  <h2>Проєкти</h2>
-  <ul class="project-list">
-    <li class="project">
-      <h3>Назва проєкту 1</h3>
-      <p>Опис: сайт з адаптивною версткою з макету Figma.</p>
-      <p>Технології: HTML, CSS, JavaScript</p>
-      <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
-    </li>
-    <li class="project">
-      <h3>Назва проєкту 2</h3>
-      <p>Опис: веб-додаток із використанням Node.js.</p>
-      <p>Технології: HTML, CSS, JS, Node.js</p>
-      <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
-    </li>
-    <li class="project">
-      <h3>Назва проєкту 3</h3>
-      <p>Опис: веб-додаток із використанням Node.js.</p>
-      <p>Технології: HTML, CSS, JS, Node.js</p>
-      <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
-    </li>
-    <li class="project">
-      <h3>Назва проєкту 4</h3>
-      <p>Опис: веб-додаток із використанням Node.js.</p>
-      <p>Технології: HTML, CSS, JS, Node.js</p>
-      <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
-    </li>
-  </ul>
+<section class="section-four">
+<div class="container container-section-four">
+    <h2>Проєкти</h2>
+    <ul class="project-list">
+      <li class="project">
+        <h3>Назва проєкту 1</h3>
+        <p>Опис: сайт з адаптивною версткою з макету Figma.</p>
+        <p>Технології: HTML, CSS, JavaScript</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва проєкту 2</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва проєкту 3</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва проєкту 4</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+    </ul>
+</div>
 </section>
 
-    <section class="container">
-      <h2>Контакти</h2>
-<div>
+<section class="section-five">
+<div class="container container-section-five">
+    <h2>Макети фігма</h2>
+    <ul class="project-list">
+      <li class="project">
+        <h3>Назва макету 1</h3>
+        <p>Опис: сайт з адаптивною версткою з макету Figma.</p>
+        <p>Технології: HTML, CSS, JavaScript</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва макету 2</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва макету 3</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+      <li class="project">
+        <h3>Назва макету 4</h3>
+        <p>Опис: веб-додаток із використанням Node.js.</p>
+        <p>Технології: HTML, CSS, JS, Node.js</p>
+        <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+      </li>
+    </ul>
+</div>
+</section>
+</main>
+
+    <footer class="section-fouter">
+      
+<div class="container container-section-fouter">
+  <h2>Контакти</h2>
         <a href="mailto:your@email.com">your@email.com</a>
         <a href="https://t.me/your_username">@your_username</a>
         <a href="https://github.com/yourusername">github.com/yourusername</a>
-      </section>
-</div>
+        </div>
+</fouter>
+
   </body>
 </html>
