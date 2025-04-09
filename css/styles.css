@@ -73,8 +73,8 @@ button {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(76, 70, 70);
-  color: #eee9e9;
+  background-color: transparent;
+  color: black;
   line-height: 1.6;
   max-width: 411px;
   margin: 0 auto;
@@ -89,48 +89,4 @@ header {
   background-color: transparent;
   text-align: center;
   padding: 32px 16px;
-}
-
-h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 18px;
-  margin-top: 24px;
-}
-
-h3 {
-  font-size: 16px;
-  margin: 8px 0;
-}
-
-p,
-li {
-  font-size: 14px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-.project {
-  background-color: #fff;
-  padding: 12px;
-  margin-bottom: 16px;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.contact a {
-  display: block;
-  margin-bottom: 8px;
-  text-decoration: none;
-  word-break: break-all;
 }
