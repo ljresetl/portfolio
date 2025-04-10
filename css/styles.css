@@ -218,24 +218,22 @@ body {
   text-align: left;
 }
 
-.container-section-three-ul-all {
-  gap: 40px;
+.container-section-three-ul-all,
+.container-section-five-ul-all,
+.container-section-four-ul-all {
+  gap: 20px;
   display: flex;
   flex-direction: column;
 }
 
 /* section-four Секція чотири */
 
-.project-list {
+.project-list,
+.project-list-five {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: left;
-}
-
-.project-list-h3,
-.project-list-p-opis {
-  margin-bottom: 20px;
 }
 
 /* section-five Секція пять */
