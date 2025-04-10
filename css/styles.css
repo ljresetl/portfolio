@@ -195,6 +195,14 @@ body {
   gap: 250px;
 }
 
+.main-logo-button-svg {
+  background-color: transparent;
+}
+
+.burger-menu {
+  background-color: transparent;
+}
+
 /* відкриття мобільного меню ксс КІНЕЦЬ */
 
 .social-title {
