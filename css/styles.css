@@ -121,7 +121,15 @@ body {
 .container-section-four,
 .container-section-fouter,
 .container-section-five,
-.container-section-designer {
+.container-section-designer,
+.footer-subscribe {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons-two {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }

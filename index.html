@@ -58,6 +58,77 @@
           </svg>
         </button>
       </div>
+
+      <!-- Мобільне меню -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="button-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-navigation">
+              <li>
+                <a href="./index.html" class="mobile-menu-navigation-li"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-menu-navigation-li">Portfolio</a>
+              </li>
+              <li><a href="" class="mobile-menu-navigation-li">Contacts</a></li>
+            </ul>
+          </nav>
+          <adress class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mobile-menu-contacts-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </adress>
+
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-iteam">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-iteam">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-iteam">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-iteam">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="main-foto">
@@ -181,13 +252,13 @@
         <div class="container container-section-designer">
           <h2>Макет сайту створив дизайнер</h2>
           <div class="designer-content">
-            <img
+            <!-- <img
               src="./images/designer-avatar.jpg"
               alt="Фото дизайнера"
               class="designer-avatar"
               width="150"
               height="150"
-            />
+            /> -->
             <div class="designer-info">
               <p><strong>Ім’я:</strong> Дизайнер Дизайнер</p>
               <p>
@@ -212,6 +283,66 @@
         <a href="mailto:your@email.com">your@email.com</a>
         <a href="https://t.me/your_username">@your_username</a>
         <a href="https://github.com/yourusername">github.com/yourusername</a>
+
+        <div class="social-media">
+          <p class="social-title">Social media</p>
+          <ul class="social-icons-two">
+            <li class="foter-spisok">
+              <a href="#" class="ahref-two">
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="foter-spisok">
+              <a href="#" class="ahref-two">
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="foter-spisok">
+              <a href="#" class="ahref-two">
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="foter-spisok">
+              <a href="#" class="ahref-two">
+                <svg class="social-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="text-subscribe">Subscribe</p>
+          <div>
+            <form class="email-footer">
+              <label class="footer-label" for="email">
+                <input
+                  type="email"
+                  class="form-input-footer"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </label>
+          </div>
+
+            <div class="btn-footer-div">
+              <button class="btn-footer" type="submit">
+                Subscribe
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
