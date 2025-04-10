@@ -218,7 +218,26 @@ body {
   text-align: left;
 }
 
+.container-section-three-ul-all {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* section-four Секція чотири */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.project-list-h3,
+.project-list-p-opis {
+  margin-bottom: 20px;
+}
+
 /* section-five Секція пять */
 /* section-designer Секція дизайнер */
 /* section-fouter Секція футер */
