@@ -120,7 +120,8 @@ body {
 .container-section-three,
 .container-section-four,
 .container-section-fouter,
-.container-section-five {
+.container-section-five,
+.container-section-designer {
   display: flex;
   flex-direction: column;
 }
