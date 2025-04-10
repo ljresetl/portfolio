@@ -222,8 +222,9 @@ body {
 .container-section-three-ul {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   text-align: left;
+  width: 390px;
 }
 
 .container-section-three-ul-all,
@@ -232,6 +233,10 @@ body {
   gap: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.container-section-three-li {
+  text-align: left;
 }
 
 /* section-four Секція чотири */
