@@ -211,6 +211,13 @@ body {
 /* section-one Секція один */
 /* section-two Секція два */
 /* section-three - Секція три */
+.container-section-three-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: left;
+}
+
 /* section-four Секція чотири */
 /* section-five Секція пять */
 /* section-designer Секція дизайнер */
