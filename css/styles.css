@@ -56,6 +56,7 @@ img {
 
 a,
 button {
+  border: none;
   cursor: pointer;
 }
 
@@ -126,6 +127,78 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+/* відкриття мобільного меню ксс ПОЧАТОК */
+/* В стилях додаємо накладку для мобільного меню */
+.mobile-menu-overlay {
+  display: none; /* Спочатку накладка прихована */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; /* Щоб вона була поверх основного контенту */
+}
+
+.mobile-menu.open ~ .mobile-menu-overlay {
+  display: block; /*Показати накладку, коли меню відкрите  */
+}
+
+/* Мобільне меню */
+.mobile-menu {
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Початково приховане за межами екрану */
+  width: 80%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10; /* Вище накладки */
+  transition: right 0.5s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0; /* Відкривається в межах екрану */
+}
+
+.close-mobile-menu {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.mobile-menu-btn {
+  text-align: right;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mobile-menu-link {
+  color: #22343d;
+}
+
+.mobile-menu-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.mobile-full-item {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+/* відкриття мобільного меню ксс КІНЕЦЬ */
+
+.social-title {
+  margin-bottom: 20px;
 }
 
 .social-icons-two {

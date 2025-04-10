@@ -32,6 +32,7 @@
             <li><a href="#pricing" class="menu-link">Навички</a></li>
             <li><a href="#my-work" class="menu-link">Мої роботи</a></li>
             <li><a href="#figma" class="menu-link">Макети фігма</a></li>
+            <li><a href="#figma-desinge" class="menu-link">Дизайнер</a></li>
             <li><a href="#telefon-mail" class="menu-link">Звязок</a></li>
           </ul>
         </nav>
@@ -58,77 +59,86 @@
           </svg>
         </button>
       </div>
+    </header>
 
-      <!-- Мобільне меню -->
-      <div class="mobile-menu">
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">
-            <svg class="button-close" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu-nav">
-            <ul class="mobile-menu-navigation">
-              <li>
-                <a href="./index.html" class="mobile-menu-navigation-li"
-                  >Studio</a
-                >
-              </li>
-              <li>
-                <a href="" class="mobile-menu-navigation-li">Portfolio</a>
-              </li>
-              <li><a href="" class="mobile-menu-navigation-li">Contacts</a></li>
-            </ul>
-          </nav>
-          <adress class="mobile-menu-contacts">
-            <ul class="mobile-menu-contacts-list">
-              <li>
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="mobile-menu-contacts-link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+110001111111" class="mobile-menu-contacts-link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </adress>
 
-          <ul class="mobile-menu-social-list">
-            <li class="mobile-menu-social-iteam">
-              <a href="" class="mobile-menu-social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-social-iteam">
-              <a href="" class="mobile-menu-social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-social-iteam">
-              <a href="" class="mobile-menu-social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-social-iteam">
-              <a href="" class="mobile-menu-social-link">
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <!-- Додано накладку -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-btn">
+        <button
+          type="button"
+          class="close-mobile-menu"
+          id="closeMobileMenu"
+          aria-label="mobile-menu-btn"
+        >
+          <svg width="24" height="24">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="12"
+              heigth="12"
+            ></use>
+          </svg>
+        </button>
       </div>
+  <div class="mobile-full-item">
+    
+              <ul class="mobile-menu-list">
+                <li><a href="./index.html" class="mobile-menu-link">Fullstack</a></li>
+                <li><a href="#pricing" class="mobile-menu-link">Навички</a></li>
+                <li><a href="#my-work" class="mobile-menu-link">Мої роботи</a></li>
+                <li><a href="#figma" class="mobile-menu-link">Макети фігма</a></li>
+                <li><a href="#figma-desinge" class="mobile-menu-link">Дизайнер</a></li>
+                <li><a href="#telefon-mail" class="mobile-menu-link">Звязок</a></li>
+              </ul>
+        
+  
+    <ul class="mobile-menu-social-list">
+                <li class="mobile-menu-social-iteam">
+                    <a href="" class="mobile-menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-social-iteam">
+                    <a href="" class="mobile-menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-social-iteam">
+                    <a href="" class="mobile-menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-social-iteam">
+                    <a href="" class="mobile-menu-social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+  
+  </div>
+      <!-- <div class="mobile-auth-buttons">
+        <button type="button" class="sign-in-menu" aria-label="Open">
+          Sign In
+        </button>
+        <button type="button" class="sign-up-menu" aria-label="Registration">
+          Sign Up
+        </button>
+      </div> -->
+    </div>
+
+    <!-- Підключення JS -->
+    <script src="script.js" defer></script>
     </header>
     <main>
       <section class="main-foto">
