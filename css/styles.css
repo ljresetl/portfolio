@@ -239,6 +239,10 @@ body {
 
 /* section-one Секція один */
 /* section-two Секція два */
+.container-section-two {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 /* section-three - Секція три */
 .container-section-three-ul {
   display: flex;
