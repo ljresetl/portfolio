@@ -250,18 +250,55 @@ body {
   gap: 20px;
   text-align: left;
   width: 390px;
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок, якщо не вміщуються */
 }
 
-.container-section-three-ul-all,
-.container-section-five-ul-all,
-.container-section-four-ul-all {
-  gap: 20px;
+.container-section-three-ul-all {
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 
-.container-section-three-li {
-  text-align: left;
+.container-section-three-ul .container-section-three-li {
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Перешкоджає стисненню елементів */
+}
+
+/* Сходинки — для Фронтенду */
+.container-section-three-ul .container-section-three-li:nth-child(1) {
+  transform: translateX(0px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(2) {
+  transform: translateX(35px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(3) {
+  transform: translateX(55px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(4) {
+  transform: translateX(75px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(5) {
+  transform: translateX(100px);
+}
+
+/* Сходинки — для Інструментів */
+.container-section-three-ul .container-section-three-li:nth-child(6) {
+  transform: translateX(0px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(7) {
+  transform: translateX(10px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(8) {
+  transform: translateX(20px);
+}
+
+.container-section-three-h {
+  font-size: 35px;
+}
+
+.container-section-three-p {
+  font-size: 25px;
 }
 
 /* section-four Секція чотири */
