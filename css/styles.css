@@ -85,11 +85,8 @@ body {
   background: rgba(240, 249, 255, 1);
   background-attachment: fixed;
   background-size: cover;
-  /* color: #ffffff; */
-  text-shadow: -1px -1px 0 lightblue,
-    /* світло-синя рамка зліва вгорі */ 1px -1px 0 lightblue,
-    /* світло-синя рамка справа вгорі */ -1px 1px 0 lightblue,
-    /* світло-синя рамка зліва внизу */ 1px 1px 0 lightblue; /* світло-синя рамка справа внизу */
+  text-shadow: -1px -1px 0 #add8e6, 1px -1px 0 #add8e6, -1px 1px 0 #add8e6,
+    1px 1px 0 #add8e6;
 }
 
 .auth-buttons,
@@ -228,13 +225,6 @@ body {
   padding-bottom: 0;
 }
 /* section-three - Секція три */
-
-.container-section-three {
-  text-shadow: -1px -1px 0 lightblue,
-    /* світло-синя рамка зліва вгорі */ 1px -1px 0 lightblue,
-    /* світло-синя рамка справа вгорі */ -1px 1px 0 lightblue,
-    /* світло-синя рамка зліва внизу */ 1px 1px 0 lightblue; /* світло-синя рамка справа внизу */
-}
 
 .container-section-three-ul {
   display: flex;
