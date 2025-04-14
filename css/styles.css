@@ -82,11 +82,11 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 
-  background: rgba(240, 249, 255, 1);
+  background: transparent;
   background-attachment: fixed;
   background-size: cover;
-  text-shadow: -1px -1px 0 #add8e6, 1px -1px 0 #add8e6, -1px 1px 0 #add8e6,
-    1px 1px 0 #add8e6;
+  text-shadow: -1px -1px 0 #c1d6de, 1px -1px 0 #d9e7ec, -1px 1px 0 #dfeaee,
+    1px 1px 0 #ddeaee;
 }
 
 .auth-buttons,
