@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.mobile-menu-link');
   const scrollUpBtn = document.querySelector('.scroll-btn.up');
   const scrollDownBtn = document.querySelector('.scroll-btn.down');
+  const scrollButtons = document.querySelector('.scroll-buttons');
 
   // Відкриття меню
   burgerBtn.addEventListener('click', () => {
     mobileMenu.classList.add('open');
     mobileMenuOverlay.style.display = 'block';
     document.body.style.overflow = 'hidden';
+    scrollButtons.style.display = 'none'; // Ховаємо стрілки
   });
 
   // Закриття меню
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.classList.remove('open');
     mobileMenuOverlay.style.display = 'none';
     document.body.style.overflow = 'auto';
+    scrollButtons.style.display = 'flex'; // Показуємо стрілки
   }
 
   closeBtn.addEventListener('click', closeMobileMenu);

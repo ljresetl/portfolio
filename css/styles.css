@@ -39,6 +39,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .visually-hidden {
@@ -76,8 +80,9 @@ body {
   color: black;
   max-width: 411px;
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     -225deg,
     rgba(76, 76, 76, 1) 0%,
     rgba(89, 89, 89, 1) 12%,
@@ -89,10 +94,10 @@ body {
     rgba(0, 0, 0, 1) 82.25%,
     rgba(28, 28, 28, 1) 91%,
     rgba(19, 19, 19, 1) 100%
-  );
+  ); */
   background-attachment: fixed;
   background-size: cover;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .auth-buttons,
@@ -216,6 +221,11 @@ body {
 }
 /* section-header Секція хедер */
 /* main-foto Секція головного фото */
+.container-main-foto {
+  background-image: url("/images/full-stack-developer411.png");
+  color: aliceblue;
+}
+
 /* section-one Секція один */
 /* section-two Секція два */
 /* section-three - Секція три */
@@ -252,6 +262,16 @@ body {
 /* section-five Секція пять */
 /* section-designer Секція дизайнер */
 /* section-fouter Секція футер */
+
+.social-icons-two {
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-footer {
+  width: 36px;
+  height: 36px;
+}
 
 /* Стрілки для прокручування */
 
