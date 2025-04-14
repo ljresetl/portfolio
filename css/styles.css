@@ -255,24 +255,31 @@ body {
   transform: translateX(35px);
 }
 .container-section-three-ul .container-section-three-li:nth-child(3) {
-  transform: translateX(55px);
+  transform: translateX(65px);
 }
 .container-section-three-ul .container-section-three-li:nth-child(4) {
-  transform: translateX(75px);
+  transform: translateX(100px);
 }
 .container-section-three-ul .container-section-three-li:nth-child(5) {
-  transform: translateX(100px);
+  transform: translateX(150px);
 }
 
 /* Сходинки — для Інструментів */
-.container-section-three-ul .container-section-three-li:nth-child(6) {
+.container-section-three-ul-two .container-section-three-li:nth-child(1) {
   transform: translateX(0px);
 }
-.container-section-three-ul .container-section-three-li:nth-child(7) {
-  transform: translateX(10px);
+.container-section-three-ul-two .container-section-three-li:nth-child(2) {
+  transform: translateX(100px);
 }
-.container-section-three-ul .container-section-three-li:nth-child(8) {
-  transform: translateX(20px);
+.container-section-three-ul-two .container-section-three-li:nth-child(3) {
+  transform: translateX(200px);
+}
+
+/* Додавання тире перед кожним елементом списку */
+.container-section-three-li::before {
+  content: "-"; /* Тире перед кожним елементом */
+  font-size: 20px; /* Розмір тире можна налаштувати */
+  color: black; /* Колір тире */
 }
 
 .container-section-three-h {
