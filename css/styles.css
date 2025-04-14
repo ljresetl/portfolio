@@ -230,6 +230,7 @@ body {
 /* section-header Секція хедер */
 /* main-foto Секція головного фото */
 .container-main-foto {
+  font-size: 45px;
   background-image: url("../images/programming-background-collage411.jpg");
   color: aliceblue;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
