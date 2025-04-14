@@ -82,6 +82,14 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 
+  background: rgba(240, 249, 255, 1); /* однотонний як запасний варіант */
+  background: linear-gradient(
+    90deg,
+    rgba(240, 249, 255, 1) 0%,
+    rgba(203, 235, 255, 1) 55%,
+    rgba(161, 219, 255, 1) 96%
+  );
+
   /* background: linear-gradient(
     -225deg,
     rgba(76, 76, 76, 1) 0%,
