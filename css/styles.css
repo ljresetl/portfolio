@@ -115,6 +115,7 @@ body {
 .footer-subscribe {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 20px;
 }
 /* відкриття мобільного меню ксс ПОЧАТОК */
@@ -240,6 +241,7 @@ body {
   position: relative;
   transition: transform 0.3s ease;
   flex-shrink: 0; /* Перешкоджає стисненню елементів */
+  width: 150px;
 }
 
 /* Сходинки — для Фронтенду */
@@ -330,6 +332,9 @@ body {
 }
 
 /* section-five Секція пять */
+.container-section-five {
+  padding-top: 0;
+}
 /* section-designer Секція дизайнер */
 /* section-fouter Секція футер */
 
