@@ -335,6 +335,38 @@ body {
 .container-section-five {
   padding-top: 0;
 }
+
+.container-section-five-h3 {
+  margin-bottom: 10px;
+}
+
+.container-section-five-opis {
+  margin-bottom: 8px;
+}
+
+.container-section-five-teh {
+  margin-bottom: 6px;
+}
+
+.container-section-five-ul-all {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-section-five-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.five-section-image-container {
+  margin-bottom: 8px;
+  border: 2px solid #904596;
+  border-radius: 12px;
+}
+
 /* section-designer Секція дизайнер */
 /* section-fouter Секція футер */
 
