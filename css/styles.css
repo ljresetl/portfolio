@@ -85,8 +85,8 @@ body {
   background: transparent;
   background-attachment: fixed;
   background-size: cover;
-  text-shadow: -1px -1px 0 #c1d6de, 1px -1px 0 #d9e7ec, -1px 1px 0 #dfeaee,
-    1px 1px 0 #ddeaee;
+  /* text-shadow: -1px -1px 0 #c1d6de, 1px -1px 0 #d9e7ec, -1px 1px 0 #dfeaee,
+    1px 1px 0 #ddeaee; */
 }
 
 .auth-buttons,
