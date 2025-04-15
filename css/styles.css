@@ -286,6 +286,34 @@ body {
 }
 
 /* section-four Секція чотири */
+.container-section-four-ul-all {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project-list-h3 {
+  margin-bottom: 10px;
+}
+
+.project-list-p-opis {
+  margin-bottom: 6px;
+}
+
+.four-section-image-container {
+  margin-bottom: 8px;
+}
+
+.container-section-four-p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.container-section-four-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .container-section-four-figma-www {
   color: #1e8499;
