@@ -81,12 +81,7 @@ body {
   max-width: 411px;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-
   background: transparent;
-  background-attachment: fixed;
-  background-size: cover;
-  /* text-shadow: -1px -1px 0 #c1d6de, 1px -1px 0 #d9e7ec, -1px 1px 0 #dfeaee,
-    1px 1px 0 #ddeaee; */
 }
 
 .auth-buttons,
@@ -212,7 +207,7 @@ body {
 /* main-foto Секція головного фото */
 .container-main-foto {
   font-size: 45px;
-  background-image: url("../images/programming-background-collage411.jpg");
+  background-image: url("../images/global-business-internet-network411x274.jpg");
   color: aliceblue;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
