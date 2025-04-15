@@ -369,7 +369,7 @@ body {
 
 /* section-designer Секція дизайнер */
 .container-section-designer {
-  background: rgba(251, 131, 250, 1);
+  background-color: #f2f2f2;
   border-radius: 12px;
 }
 
