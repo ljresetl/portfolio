@@ -277,7 +277,7 @@ body {
 
 /* Додавання тире перед кожним елементом списку */
 .container-section-three-li::before {
-  content: "-  "; /* Тире перед кожним елементом */
+  content: "-   "; /* Тире перед кожним елементом */
   font-size: 20px; /* Розмір тире можна налаштувати */
   color: black; /* Колір тире */
 }
@@ -291,6 +291,14 @@ body {
 }
 
 /* section-four Секція чотири */
+
+.container-section-four-figma {
+  font-size: 25px;
+}
+
+.maket-figma {
+  font-size: 25px;
+}
 
 .project-list,
 .project-list-five {
