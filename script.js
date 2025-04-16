@@ -55,4 +55,49 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     });
   }
+
+  // 👉 Свайп для закриття мобільного меню
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  mobileMenu.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  mobileMenu.addEventListener('touchend', function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeDistance = touchEndX - touchStartX;
+    const minSwipeDistance = 50; // мінімальна довжина свайпу
+
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      closeMobileMenu();
+    }
+  }
 });
+
+// JavaScript: показуємо кнопку після прокрутки > 10% висоти сторінки
+(function() {
+  const btn = document.getElementById('to-top');
+  const THRESHOLD = 0.10;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (scrollY > pageHeight * THRESHOLD) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+})();

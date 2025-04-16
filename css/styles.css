@@ -141,7 +141,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%; /* Початково приховане за межами екрану */
-  width: 80%;
+  width: 60%;
   height: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.5);
@@ -387,31 +387,27 @@ body {
 
 /* Стрілки для прокручування */
 
+/* CSS: позиціонуємо кнопку і ховаємо за замовчуванням */
 .scroll-buttons {
   position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+  bottom: 20px; /* відступ від низу */
+  right: 20px; /* відступ від правого краю */
   z-index: 1000;
 }
 
 .scroll-btn {
-  background-color: transparent;
-  color: #bd1cad;
+  display: none; /* ховаємо кнопку спочатку */
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  background-color: #993e90;
+  color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: opacity 0.3s ease;
 }
 
-.scroll-btn:hover {
-  background-color: transparent;
+.scroll-btn.show {
+  display: block; /* показуємо коли додається клас .show */
 }
