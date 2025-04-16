@@ -89,6 +89,10 @@ body {
   display: none;
 }
 
+.svg-logo {
+  background-color: transparent;
+}
+
 .logo {
   display: flex;
   justify-content: center;
