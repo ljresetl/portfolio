@@ -71,16 +71,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleSwipe() {
     const swipeDistance = touchEndX - touchStartX;
-    const minSwipeDistance = 50; // мінімальна довжина свайпу
+    const minSwipeDistance = 50;
 
     if (Math.abs(swipeDistance) > minSwipeDistance) {
       closeMobileMenu();
     }
   }
+
+  // Показати ще — плавне розгортання
+  const items = document.querySelectorAll('.project-item');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const itemsPerClick = 3;
+  let currentIndex = 0;
+
+  function showNextItems() {
+    const nextItems = Array.from(items).slice(currentIndex, currentIndex + itemsPerClick);
+
+    nextItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add('visible');
+      }, index * 100); // плавне по черзі
+    });
+
+    currentIndex += itemsPerClick;
+
+    if (currentIndex >= items.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+  if (loadMoreBtn && items.length > 0) {
+    showNextItems();
+    loadMoreBtn.addEventListener('click', showNextItems);
+  }
 });
 
-// JavaScript: показуємо кнопку після прокрутки > 10% висоти сторінки
-(function() {
+// Кнопка "вгору" після 10% скролу сторінки
+(function () {
   const btn = document.getElementById('to-top');
   const THRESHOLD = 0.10;
 

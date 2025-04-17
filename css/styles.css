@@ -371,6 +371,37 @@ body {
   border-radius: 12px;
 }
 
+/* Кнопка показати ще */
+.project-item {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.project-item.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#load-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background-color: #0077ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#load-more-btn:hover {
+  background-color: #005ccc;
+}
+
 /* section-designer Секція дизайнер */
 .container-section-designer {
   background-color: #f2f2f2;
