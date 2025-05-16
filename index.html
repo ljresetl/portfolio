@@ -22,7 +22,7 @@
             aria-label="buttonlogo"
           >
             <svg class="svg-logo" alt="I.A.F"  width="40" height="40">
-              <use href="./images/icons.svg#icon-imf"></use>
+              <use class="svg-logo-use" href="./images/icons.svg#icon-imf"></use>
             </svg>
             
           </button>
@@ -131,87 +131,160 @@
     <main>
       <section class="main-foto">
         <div class="container container-main-foto">
-          <h1>Fullstack Developer</h1>
+          <h1 class="main-foto-h">Fullstack Developer</h1>
         </div>
       </section>
 
       <section class="section-one">
         <div class="container container-section-one">
-          <div>
-            <h2>
-              Привіт! Я — починаючий Fullstack Developer створюю сучасні сайти,
-              верстаю з макетів Figma та розвиваюся в розробці веб-додатків
+          <div class="container-section-one-div-h">
+            <h2 class="container-section-one-h">
+              Привіт! Я — починаючий Fullstack Developer, який захоплюється створенням сучасних, адаптивних та функціональних вебсайтів. Верстаю з макетів у Figma, дотримуюсь принципів mobile-first і піклуюся про чистий, семантичний HTML та структурований CSS-код. Постійно вдосконалюю свої знання JavaScript і вивчаю можливості сучасних фреймворків. Моя мета — створювати швидкі, зручні та візуально привабливі сайти, які приносять користь і задоволення користувачам. Я активно розвиваюся у сфері веб-розробки та готовий до нових викликів, реальних проєктів і співпраці.
             </h2>
           </div>
           <div class="one-section-image-container">
-            <img
+
+            <picture class="tablet-desktop-only">
+              <!-- Десктопна версія -->
+              <source
+                srcset="./images/futurism-perspective-digital-nomads-lifestyle.jpg 2x"
+                media="(min-width: 1004px)"
+                width="1004"
+              height="630"
+              />
+              <!-- Планшетна версія -->
+              <!-- <source
+                srcset="./images/main-first690-one-foto.png 1x, 
+                        ./images/main-first690-one-foto2x.png 2x"
+                media="(min-width: 690px)"
+              /> -->
+              <!-- Мобільна версія або fallback -->
+              <img
               src="./images/futurism-perspective-digital-nom411x258.jpg"
               alt="Amico Image"
               width="500"
               height="310"
             />
+            </picture>
           </div>
         </div>
       </section>
 
       <section class="section-two">
         <div class="container container-section-two">
-          <h2>Про мене</h2>
-          <p>
-            Мене звати Віталій. Я проходжу курси Fullstack Developer і вже
-            створюю повноцінні сайти, адаптовані під всі пристрої. Не використовую margin i padding, 
-            тільки flex-box i grid. А якщо і прийдеться використати, то тільки мінімальну кількість.
-            Вмію працювати з Figma(верстати з макету з точністю до пікселя), HTML, CSS, а також вивчаю JavaScript і бекенд.
-          </p>
+          <div class="container-section-two-text">
+            <h2 class="container-section-two-h">Про мене</h2>
+            <p class="container-section-two-p">
+              Мене звати Віталій. Я проходжу курси Fullstack Developer і вже створюю повноцінні, адаптивні вебсайти, які чудово виглядають і працюють на будь-яких пристроях. У своїй верстці віддаю перевагу сучасному підходу — використовую лише Flexbox та CSS Grid для розміщення елементів, без надмірного використання margin чи padding. Якщо й застосовую їх — то лише мінімально, для точної побудови інтерфейсу.
+
+              Маю досвід роботи з Figma — можу верстати з макету з піксельною точністю, дотримуюсь принципів mobile-first, семантики й чистоти коду. Упевнено володію HTML і CSS, паралельно активно вивчаю JavaScript і бекенд-частину розробки, щоб мати змогу реалізовувати повноцінні вебзастосунки. Моя мета — стати універсальним розробником, який розуміє як фронтенд, так і бекенд, та створює продукти, які одночасно привабливі, швидкі й зручні у використанні.
+            </p>
+          </div>
         <div class="one-section-image-container">
+
+          <picture class="tablet-desktop-only">
+            <!-- Десктопна версія -->
+            <source
+              srcset="./images/3d-rendering-blockchain-technology.jpg 2x"
+              media="(min-width: 1004px)"
+              width="1004"
+            height="630"
+            />
+            <!-- Планшетна версія -->
+            <!-- <source
+              srcset="./images/main-first690-one-foto.png 1x, 
+                      ./images/main-first690-one-foto2x.png 2x"
+              media="(min-width: 690px)"
+            /> -->
+            <!-- Мобільна версія або fallback -->
             <img
               src="./images/3d-rendering-blockchain-technolo411x312.jpg"
               alt="Amico Image"
               width="500"
               height="310"
             />
+          </picture>
+
+
           </div>
         </div>
       </section>
 
       <section class="section-three" id="skills">
         <div class="container container-section-three">
-          <h2 class="container-section-three-h">Навички</h2>
-<div class="container-section-three-ul-all">
-            <div>
-              <p class="container-section-three-p">Фронтенд:</p>
-              <ul class="container-section-three-ul">
-                <li class="container-section-three-li">HTML;</li>
-                  <li class="container-section-three-li">CSS;</li>
-                  <li class="container-section-three-li">JavaScript;</li>
-                  <li class="container-section-three-li">адаптивна
-                  верстка;</li>
-                  <li class="container-section-three-li">робота з Figma;</li>
-                  </ul>
+          <div class="section-three-skills">
+            <h2 class="container-section-three-h">Навички</h2>
+          
+            <div class="container-section-three-ul-all">
+              <div>
+                <p class="container-section-three-p">Фронтенд:</p>
+                <ul class="container-section-three-ul">
+                  <li class="container-section-three-li">
+                    HTML — семантична, чиста розмітка.
+                  </li>
+                  <li class="container-section-three-li">
+                    CSS — адаптивна верстка з Flexbox та Grid.
+                  </li>
+                  <li class="container-section-three-li">
+                    JavaScript — додаю логіку та динаміку на сторінки.
+                  </li>
+                  <li class="container-section-three-li">
+                    Figma — верстаю точно з макетів.
+                  </li>
+                </ul>
+              </div>
             </div>
+          
             <div class="container-section-three-ul-two">
               <p class="container-section-three-p">Інструменти:</p>
               <ul class="container-section-three-ul">
-                <li class="container-section-three-li">Git;</li>
-                <li class="container-section-three-li">GitHub;</li>
-                <li class="container-section-three-li">VS Code;</li>
+                <li class="container-section-three-li">
+                  Git — контроль версій.
+                </li>
+                <li class="container-section-three-li">
+                  GitHub — хостинг і спільна робота.
+                </li>
+                <li class="container-section-three-li">
+                  VS Code — зручний редактор коду.
+                </li>
               </ul>
             </div>
-</div>
+          </div>
+          
+          
                     <div class="one-section-image-container">
-            <img
-              src="./images/3d-shapes-glowing-with-bright-ho411x734.jpg"
-              alt="Amico Image"
-              width="500"
-              height="310"
-            />
+
+                      <picture class="tablet-desktop-only">
+                        <!-- Десктопна версія -->
+                        <source
+                          srcset="./images/3d-shapes-glowing-with-bright-holographic-colors.jpg 2x"
+                          media="(min-width: 1004px)"
+                          width="1004"
+                        height="630"
+                        />
+                        <!-- Планшетна версія -->
+                        <!-- <source
+                          srcset="./images/main-first690-one-foto.png 1x, 
+                                  ./images/main-first690-one-foto2x.png 2x"
+                          media="(min-width: 690px)"
+                        /> -->
+                        <!-- Мобільна версія або fallback -->
+                        <img
+                        src="./images/3d-shapes-glowing-with-bright-ho411x734.jpg"
+                        alt="Amico Image"
+                        width="500"
+                        height="310"
+                      />
+                      </picture>
+
+
           </div>
         </div>
       </section>
 
       <section class="section-four" id="my-work">
         <div class="container container-section-four">
-          <h2>Проєкти</h2>
+          <h2 class="container-section-four-h">Мої роботи</h2>
           <div class="container-section-four-ul-all">
           <div>
               <h3 class="project-list-h3">Назва проекту - PRODUCT</h3>
@@ -299,7 +372,7 @@
         </div>
       </section>
 
-     <section class="section-five" id="figma">
+     <!-- <section class="section-five" id="figma">
         <div class="container container-section-five">
           <h2 class="container-section-five-h2">Макети фігма</h2>
           <div class="container-section-five-ul-all">
@@ -573,16 +646,16 @@
 
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-designer" id="figma-desinge">
+      <!-- <section class="section-designer" id="figma-desinge">
         <div class="container container-section-designer">
           <h2>Займаюсь професійним верстанням сайтів під ключ — адаптивно, швидко та якісно. Верстаю з макетів Figma, створюю зручні та сучасні інтерфейси. Якщо вам потрібен сайт, який виглядає ідеально на всіх пристроях і приносить результат — звертайтесь. Я допоможу втілити ваш дизайн у живий, працюючий сайт за справедливу оплату.</h2>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="section-fouter" id="telefon-mail">
+    <!-- <footer class="section-fouter" id="telefon-mail">
       <div class="container container-section-fouter">
         <h2>Контакти</h2>
 
@@ -643,7 +716,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </main>
    <div class="scroll-buttons">
   <button id="to-top" class="scroll-btn" aria-label="Scroll to top">

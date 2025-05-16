@@ -19,9 +19,17 @@ p:last-child {
 ul,
 ol,
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #22343d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.85714;
+  letter-spacing: 0.02em;
+  background: transparent;
 }
 
 a {
@@ -73,13 +81,15 @@ button {
   text-align: center;
   min-width: 350px;
   max-width: 411px;
-  padding: 80px 10px;
+  padding: 0px 10px;
+}
+
+section {
+  padding: 80px 0px;
 }
 
 body {
   color: black;
-  max-width: 411px;
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   background: transparent;
 }
@@ -149,7 +159,7 @@ body {
   height: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 10; /* Вище накладки */
+  z-index: 999; /* Вище накладки */
   transition: right 0.5s ease-in-out;
 }
 
@@ -216,13 +226,160 @@ body {
   color: aliceblue;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-foto {
+  padding: 0px;
+}
+
+.main-foto-h {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    min-width: 1004px;
+    max-width: 1900px;
+  }
+
+  .main-logo-button-svg {
+    padding: 0px;
+  }
+
+  .svg-logo {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .container-main-foto {
+    background-image: url("../images/global-business-internet-network.jpg");
+    font-size: 76px;
+    border-radius: 10px;
+  }
+
+  .main-foto-h {
+    padding-top: 400px;
+    padding-bottom: 400px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .auth-buttons,
+  .menu {
+    display: block;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    font-size: 21px;
+  }
+
+  .menu-link:hover {
+    color: #24b1be;
+  }
+
+  .menu-link:focus {
+    color: #24b1be;
+  }
+
+  .auth-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .sign-in {
+    border-radius: 15px;
+    padding: 10px 40px;
+    min-width: 120px;
+    min-height: 56px;
+    background-color: #15bac0;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .sign-up {
+    border-radius: 15px;
+    padding: 10px 40px;
+    min-width: 120px;
+    min-height: 56px;
+    background-color: #14af9d;
+    font-size: 20px;
+    color: #fff;
+  }
 }
 
 /* section-one Секція один */
+
+.container-section-one-h {
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-one {
+    padding: 200px 0px;
+  }
+
+  .container-section-one {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 35px;
+    min-width: 1004px;
+    max-width: 1900px;
+  }
+
+  .container-section-one-div-h {
+    width: 50%;
+  }
+
+  .container-section-one-h {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 28px;
+  }
+}
 /* section-two Секція два */
 .container-section-two {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-two {
+    padding: 0px;
+  }
+
+  .container-section-two {
+    /* align-items: flex-start; */
+    flex-direction: row-reverse;
+    gap: 55px;
+    min-width: 1004px;
+    max-width: 1900px;
+  }
+
+  .container-section-two-text {
+    width: 50%;
+  }
+
+  .container-section-two-h {
+    font-weight: 300;
+    font-size: 42px;
+  }
+
+  .container-section-two-p {
+    text-align: left;
+    font-weight: 300;
+    font-size: 26px;
+  }
 }
 /* section-three - Секція три */
 
@@ -231,7 +388,7 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: left;
-  width: 390px;
+  /* min-width: 390px; */
   flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок, якщо не вміщуються */
 }
 
@@ -291,6 +448,66 @@ body {
   font-size: 25px;
 }
 
+@media screen and (min-width: 1024px) {
+  .container-section-three {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 55px;
+    min-width: 1004px;
+    max-width: 1900px;
+  }
+
+  .section-three-skills {
+    width: 50%;
+  }
+
+  .container-section-three-ul {
+    gap: 26px;
+    margin-bottom: 120px;
+  }
+
+  .container-section-three-h {
+    font-weight: 300;
+    font-size: 42px;
+  }
+
+  .container-section-three-li {
+    font-weight: 200;
+    font-size: 22px;
+  }
+
+  .container-section-three-p {
+    text-align: left;
+    font-weight: 300;
+    font-size: 26px;
+  }
+
+  /* Сходинки — для Фронтенду */
+  .container-section-three-ul .container-section-three-li:nth-child(1) {
+    transform: translateX(20px);
+  }
+  .container-section-three-ul .container-section-three-li:nth-child(2) {
+    transform: translateX(230px);
+  }
+  .container-section-three-ul .container-section-three-li:nth-child(3) {
+    transform: translateX(380px);
+  }
+  .container-section-three-ul .container-section-three-li:nth-child(4) {
+    transform: translateX(570px);
+  }
+
+  /* Сходинки — для Інструментів */
+  .container-section-three-ul-two .container-section-three-li:nth-child(1) {
+    transform: translateX(20px);
+  }
+  .container-section-three-ul-two .container-section-three-li:nth-child(2) {
+    transform: translateX(250px);
+  }
+  .container-section-three-ul-two .container-section-three-li:nth-child(3) {
+    transform: translateX(500px);
+  }
+}
+
 /* section-four Секція чотири */
 .container-section-four-ul-all {
   display: flex;
@@ -333,6 +550,43 @@ body {
   flex-direction: column;
   gap: 10px;
   text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-section-four-ul-all {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    width: 100%;
+    min-height: 464px;
+  }
+
+  .container-section-four-h {
+    font-weight: 300;
+    font-size: 62px;
+  }
+
+  .project-list-h3 {
+    font-weight: 200;
+    font-size: 32px;
+  }
+
+  .project-list-p-opis {
+    font-weight: 200;
+    font-size: 24px;
+  }
+
+  .container-section-four-p {
+    font-weight: 200;
+    font-size: 22px;
+  }
+
+  .container-section-four-li {
+    font-weight: 200;
+    font-size: 20px;
+  }
 }
 
 /* section-five Секція пять */
