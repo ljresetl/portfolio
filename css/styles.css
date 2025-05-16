@@ -366,6 +366,10 @@ body {
     max-width: 1900px;
   }
 
+  .one-section-image-container {
+    width: 50%;
+  }
+
   .container-section-two-text {
     width: 50%;
   }
@@ -623,6 +627,21 @@ body {
   margin-bottom: 8px;
   border: 2px solid #904596;
   border-radius: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-section-five-ul-all {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+  }
+
+  img {
+    width: 100%;
+    min-width: 595px;
+    height: 593px;
+  }
 }
 
 /* Кнопка показати ще */
