@@ -84,32 +84,6 @@ section {
   display: none;
 }
 
-/* Еффект рожевого вогню для лого початок */
-/* .svg-logo {
-  background-color: transparent;
-  position: relative;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
-  animation: pinkFlame 2s infinite ease-in-out;
-  transition: box-shadow 0.3s ease;
-  z-index: 1;
-}
-
-@keyframes pinkFlame {
-  0% {
-    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
-      0 0 30px rgba(255, 105, 180, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(255, 20, 147, 0.8),
-      0 0 40px rgba(255, 20, 147, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
-      0 0 30px rgba(255, 105, 180, 0.3);
-  }
-} */
-
 /* Еффект рожевого вогню для лого кінець */
 
 .logo {
@@ -253,7 +227,7 @@ section {
 @media screen and (min-width: 1024px) {
   .container {
     min-width: 1024px;
-    max-width: 1900px;
+    max-width: 1600px;
   }
 
   .container-header {
@@ -356,7 +330,7 @@ section {
     flex-direction: row;
     gap: 35px;
     min-width: 1004px;
-    max-width: 1900px;
+    max-width: 1600px;
   }
 
   .container-section-one-div-h {
@@ -385,7 +359,7 @@ section {
     flex-direction: row-reverse;
     gap: 55px;
     min-width: 1004px;
-    max-width: 1900px;
+    max-width: 1600px;
   }
 
   .two-section-image-container {
@@ -482,7 +456,7 @@ section {
     flex-direction: row;
     gap: 160px;
     min-width: 1004px;
-    max-width: 1900px;
+    max-width: 1600px;
   }
 
   .section-three-skills {
