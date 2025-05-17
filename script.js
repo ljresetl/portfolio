@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Показати ще — плавне розгортання
   const items = document.querySelectorAll('.project-item');
   const loadMoreBtn = document.getElementById('load-more-btn');
-  const itemsPerClick = 3;
+  const itemsPerClick = 4;
   let currentIndex = 0;
 
   function showNextItems() {

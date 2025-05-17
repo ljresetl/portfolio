@@ -99,9 +99,33 @@ body {
   display: none;
 }
 
-.svg-logo {
+/* Еффект рожевого вогню для лого початок */
+/* .svg-logo {
   background-color: transparent;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  animation: pinkFlame 2s infinite ease-in-out;
+  transition: box-shadow 0.3s ease;
+  z-index: 1;
 }
+
+@keyframes pinkFlame {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+      0 0 30px rgba(255, 105, 180, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.8),
+      0 0 40px rgba(255, 20, 147, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+      0 0 30px rgba(255, 105, 180, 0.3);
+  }
+} */
+
+/* Еффект рожевого вогню для лого кінець */
 
 .logo {
   display: flex;
@@ -243,8 +267,14 @@ body {
 
 @media screen and (min-width: 1024px) {
   .container {
-    min-width: 1004px;
+    min-width: 1024px;
     max-width: 1900px;
+  }
+
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-logo-button-svg {
@@ -252,8 +282,15 @@ body {
   }
 
   .svg-logo {
+    background-color: transparent;
     width: 140px !important;
-    height: 140px !important;
+    height: 100px !important;
+  }
+
+  .svg-logo-use {
+    background-color: transparent;
+    width: 50px !important;
+    height: 50px !important;
   }
 
   .container-main-foto {
@@ -279,8 +316,8 @@ body {
   .menu-list {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    font-size: 21px;
+    gap: 40px;
+    font-size: 26px;
   }
 
   .menu-link:hover {
@@ -366,8 +403,9 @@ body {
     max-width: 1900px;
   }
 
-  .one-section-image-container {
+  .two-section-image-container {
     width: 50%;
+    height: auto;
   }
 
   .container-section-two-text {
@@ -375,8 +413,9 @@ body {
   }
 
   .container-section-two-h {
-    font-weight: 300;
-    font-size: 42px;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 120px;
   }
 
   .container-section-two-p {
@@ -456,7 +495,7 @@ body {
   .container-section-three {
     align-items: flex-start;
     flex-direction: row;
-    gap: 55px;
+    gap: 160px;
     min-width: 1004px;
     max-width: 1900px;
   }
@@ -465,25 +504,29 @@ body {
     width: 50%;
   }
 
+  .one-section-image-container {
+    width: 50%;
+  }
+
   .container-section-three-ul {
-    gap: 26px;
-    margin-bottom: 120px;
+    gap: 10px;
+    /* margin-bottom: 120px; */
   }
 
   .container-section-three-h {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 42px;
   }
 
   .container-section-three-li {
-    font-weight: 200;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 26px;
   }
 
   .container-section-three-p {
     text-align: left;
-    font-weight: 300;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 28px;
   }
 
   /* Сходинки — для Фронтенду */
@@ -591,6 +634,34 @@ body {
     font-weight: 200;
     font-size: 20px;
   }
+  /* Еффект рожевого вогню four-section-image-container початок */
+  .four-section-image-container {
+    position: relative;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); /* рожеве світіння */
+    animation: pinkFlame 2s infinite ease-in-out;
+    transition: box-shadow 0.3s ease;
+    z-index: 1;
+  }
+
+  @keyframes pinkFlame {
+    0% {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+        0 0 30px rgba(255, 105, 180, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(255, 20, 147, 0.8),
+        0 0 40px rgba(255, 20, 147, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+        0 0 30px rgba(255, 105, 180, 0.3);
+    }
+  }
+  /* Еффект рожевого вогню four-section-image-container кінець */
 }
 
 /* section-five Секція пять */
@@ -633,14 +704,69 @@ body {
   .container-section-five-ul-all {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
   }
 
-  img {
-    width: 100%;
-    min-width: 595px;
-    height: 593px;
+  .container-section-five-h2 {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  /* Еффект рожевого вогню навкруги project-item початок */
+  .project-item {
+    position: relative;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); /* рожеве світіння */
+    animation: pinkFlame 2s infinite ease-in-out;
+    transition: box-shadow 0.3s ease;
+    z-index: 1;
+  }
+
+  @keyframes pinkFlame {
+    0% {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+        0 0 30px rgba(255, 105, 180, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(255, 20, 147, 0.8),
+        0 0 40px rgba(255, 20, 147, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
+        0 0 30px rgba(255, 105, 180, 0.3);
+    }
+  }
+
+  /* Еффект рожевого вогню навкруги project-item кінець */
+
+  .img-section-five {
+    height: 500px;
+  }
+
+  .container-section-five-h3 {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .container-section-five-opis {
+    font-weight: 300;
+    font-size: 26px;
+  }
+
+  .container-section-five-li {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .container-section-five-teh {
+    font-weight: 600;
+    font-size: 24px;
   }
 }
 
@@ -675,6 +801,22 @@ body {
   background-color: #005ccc;
 }
 
+@media screen and (min-width: 1024px) {
+  #load-more-btn {
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 40px;
+    min-width: 120px;
+    min-height: 56px;
+    background-color: #15bac0;
+    font-size: 26px;
+  }
+
+  #load-more-btn:hover {
+    background-color: #57c6ca;
+  }
+}
+
 /* section-designer Секція дизайнер */
 .container-section-designer {
   background-color: #f2f2f2;
@@ -691,6 +833,12 @@ body {
 .social-icon-footer {
   width: 36px;
   height: 36px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-section-fouter {
+    display: flex;
+  }
 }
 
 /* Стрілки для прокручування */
