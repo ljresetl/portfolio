@@ -355,7 +355,6 @@ section {
   }
 
   .container-section-two {
-    /* align-items: flex-start; */
     flex-direction: row-reverse;
     gap: 55px;
     min-width: 1004px;
@@ -373,8 +372,8 @@ section {
 
   .container-section-two-h {
     font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 120px;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
 
   .container-section-two-p {
@@ -454,7 +453,7 @@ section {
   .container-section-three {
     align-items: flex-start;
     flex-direction: row;
-    gap: 160px;
+    gap: 60px;
     min-width: 1004px;
     max-width: 1600px;
   }
@@ -490,27 +489,27 @@ section {
 
   /* Сходинки — для Фронтенду */
   .container-section-three-ul .container-section-three-li:nth-child(1) {
-    transform: translateX(20px);
+    transform: translateX(0px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(2) {
-    transform: translateX(230px);
+    transform: translateX(100px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(3) {
-    transform: translateX(380px);
+    transform: translateX(200px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(4) {
-    transform: translateX(570px);
+    transform: translateX(300px);
   }
 
   /* Сходинки — для Інструментів */
   .container-section-three-ul-two .container-section-three-li:nth-child(1) {
-    transform: translateX(20px);
+    transform: translateX(0px);
   }
   .container-section-three-ul-two .container-section-three-li:nth-child(2) {
-    transform: translateX(250px);
+    transform: translateX(150px);
   }
   .container-section-three-ul-two .container-section-three-li:nth-child(3) {
-    transform: translateX(500px);
+    transform: translateX(250px);
   }
 }
 
