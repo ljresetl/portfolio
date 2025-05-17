@@ -455,10 +455,10 @@ section {
   transform: translateX(0px);
 }
 .container-section-three-ul-two .container-section-three-li:nth-child(2) {
-  transform: translateX(100px);
+  transform: translateX(70px);
 }
 .container-section-three-ul-two .container-section-three-li:nth-child(3) {
-  transform: translateX(200px);
+  transform: translateX(120px);
 }
 
 /* Додавання тире перед кожним елементом списку */
