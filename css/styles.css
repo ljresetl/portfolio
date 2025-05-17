@@ -19,7 +19,6 @@ p:last-child {
 ul,
 ol,
 body {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,15 +31,13 @@ body {
   background: transparent;
 }
 
-a {
+a,
+button {
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   color: currentColor;
   font-style: normal;
-}
-
-button {
-  color: currentColor;
-  cursor: pointer;
 }
 
 img {
@@ -66,12 +63,6 @@ img {
   width: 1px;
 }
 
-a,
-button {
-  border: none;
-  cursor: pointer;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -86,12 +77,6 @@ button {
 
 section {
   padding: 80px 0px;
-}
-
-body {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  background: transparent;
 }
 
 .auth-buttons,
@@ -634,6 +619,15 @@ body {
     font-weight: 200;
     font-size: 20px;
   }
+
+  .container-section-four-a {
+    font-weight: 200;
+    font-size: 24px;
+  }
+
+  .container-section-four-a:hover {
+    color: rgba(255, 105, 180, 0.6);
+  }
   /* Еффект рожевого вогню four-section-image-container початок */
   .four-section-image-container {
     position: relative;
@@ -838,6 +832,99 @@ body {
 @media screen and (min-width: 1024px) {
   .container-section-fouter {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container-section-fouter-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .footer-subscribe {
+    margin: 0px;
+  }
+
+  .container-section-fouter-h {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .fouter-a {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .social-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px;
+  }
+
+  .social-icon-footer {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-subscribe {
+    flex-basis: 100%;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .text-subscribe {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .form-input-footer {
+    width: 70%;
+    height: 80px;
+    border-color: #904596;
+    padding-left: 40px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .form-input-footer::placeholder {
+    font-size: 36px;
+    color: #904596;
+    font-weight: 600;
+  }
+
+  .btn-footer-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .btn-footer {
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px 40px;
+    min-width: 120px;
+    min-height: 56px;
+    background-color: #15bac0;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .btn-footer:hover {
+    background-color: #57c6ca;
   }
 }
 
