@@ -453,7 +453,7 @@ section {
   .container-section-three {
     align-items: flex-start;
     flex-direction: row;
-    gap: 60px;
+    gap: 220px;
     min-width: 1004px;
     max-width: 1600px;
   }
@@ -473,18 +473,18 @@ section {
 
   .container-section-three-h {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .container-section-three-li {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .container-section-three-p {
     text-align: left;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   /* Сходинки — для Фронтенду */
