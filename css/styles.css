@@ -457,7 +457,6 @@ section {
   .container-section-three {
     align-items: flex-start;
     flex-direction: row;
-    /* gap: 220px; */
     min-width: 1004px;
     max-width: 1600px;
   }
