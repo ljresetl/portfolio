@@ -333,6 +333,10 @@ section {
     max-width: 1600px;
   }
 
+  .one-section-image-container {
+    width: 50%;
+  }
+
   .container-section-one-div-h {
     width: 50%;
   }
@@ -453,17 +457,17 @@ section {
   .container-section-three {
     align-items: flex-start;
     flex-direction: row;
-    gap: 220px;
+    /* gap: 220px; */
     min-width: 1004px;
     max-width: 1600px;
   }
 
   .section-three-skills {
-    width: 40%;
+    width: 50%;
   }
 
-  .one-section-image-container {
-    width: 40%;
+  .three-section-image-container {
+    width: 50%;
   }
 
   .container-section-three-ul {
@@ -492,13 +496,13 @@ section {
     transform: translateX(0px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(2) {
-    transform: translateX(100px);
+    transform: translateX(150px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(3) {
-    transform: translateX(200px);
+    transform: translateX(300px);
   }
   .container-section-three-ul .container-section-three-li:nth-child(4) {
-    transform: translateX(300px);
+    transform: translateX(450px);
   }
 
   /* Сходинки — для Інструментів */
