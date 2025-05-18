@@ -967,12 +967,42 @@ section {
   transform: translateX(-50%);
   width: 80%;
   max-width: 100%;
-  height: 70%;
-  background-color: white;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.979);
   z-index: 9999;
   overflow-y: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid #007bff;
+
   padding: 20px;
   box-sizing: border-box;
+}
+
+.resume-on {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.resume-h {
+  font-size: 28px;
+}
+
+.resume-hh {
+  font-size: 24px;
+}
+
+.resume-p {
+  font-size: 20px;
+}
+
+.resume-hhh {
+  font-size: 22px;
+}
+
+.resume-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
 }
