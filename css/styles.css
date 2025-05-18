@@ -302,6 +302,7 @@ section {
   }
 
   .one-button {
+    display: block;
     border-radius: 15px;
     padding: 10px 40px;
     min-width: 120px;
