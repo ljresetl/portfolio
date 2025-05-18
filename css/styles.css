@@ -23,10 +23,10 @@ body {
   padding: 0;
   list-style: none;
   color: #22343d;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.85714;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   background: transparent;
 }
@@ -348,7 +348,7 @@ section {
   .container-section-one-h {
     margin: 0px;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 /* section-two Секція два */
@@ -474,24 +474,25 @@ section {
   }
 
   .container-section-three-ul {
-    gap: 10px;
-    /* margin-bottom: 120px; */
+    gap: 70px;
   }
 
   .container-section-three-h {
     font-weight: 700;
     font-size: 36px;
+    margin-bottom: 20px;
   }
 
   .container-section-three-li {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .container-section-three-p {
     text-align: left;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 26px;
+    margin-bottom: 16px;
   }
 
   /* Сходинки — для Фронтенду */
