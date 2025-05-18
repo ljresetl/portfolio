@@ -870,7 +870,11 @@ section {
   }
 
   .footer-subscribe {
+    display: none;
     margin: 0px;
+    flex-basis: 100%;
+    gap: 40px;
+    padding-bottom: 80px;
   }
 
   .container-section-fouter-h {
@@ -892,12 +896,6 @@ section {
   .social-icon-footer {
     width: 60px;
     height: 60px;
-  }
-
-  .footer-subscribe {
-    flex-basis: 100%;
-    gap: 40px;
-    padding-bottom: 80px;
   }
 
   .text-subscribe {
