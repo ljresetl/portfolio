@@ -41,16 +41,18 @@
             <li><a href="#telefon-mail" class="menu-link">Звязок</a></li>
           </ul>
         </nav>
+<!-- кнопка зворотного звязку -->
+        <button type="button" class="one-button">Зворотній зв'язок</button>
 
         <!-- Кнопки входу -->
-        <div class="auth-buttons">
+        <!-- <div class="auth-buttons">
           <button type="button" class="sign-in" aria-label="sign-in">
             Sign In
           </button>
           <button type="button" class="sign-up" aria-label="sign-up">
             Sign Up
           </button>
-        </div>
+        </div> -->
         <!-- Бургер-меню -->
         <button
           type="button"
@@ -295,16 +297,16 @@
 
               <div class="container-section-four-ul-project">
               
-                <h3 class="project-list-h3">Назва проекту - Барбершоп</h3>
+                <h3 class="project-list-h3">Назва проекту - Neway-Grup</h3>
                <p class="project-list-p-opis">
       Опис: 
-      <a href="https://ljresetl.github.io/barbershop/" target="_blank" class="container-section-four-figma"><span class="container-section-four-figma-www">сайт з адаптивною версткою</span></a> з макету Figma
+      <a href="https://ljresetl.github.io/Neway-Grup/" target="_blank" class="container-section-four-figma"><span class="container-section-four-figma-www">сайт з адаптивною версткою</span></a> з макету Figma
       та посиланням на сам макет: 
-      <a href="https://www.figma.com/design/8rFYb4fnrKQ9oa6EWtZx30/Landing-page---%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D1%88%D0%BE%D0%BF--Copy-?node-id=1374-32&t=gtAhvALMimzaZmga-0">макет Figma</span></a>.
+      <a href="https://www.figma.com/design/KBK97RnaJsjnIkg8NcIBqy/%D0%92%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%B9-%D0%91%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2?node-id=0-3&t=lC3lgO9pHupS6FTx-0">макет Figma</span></a>.
     </p>
     <div class="four-section-image-container">
                 <img
-                  src="./images/priklad3-411x350.png"
+                  src="./images/new-grup411.png"
                   alt="Amico Image"
                   width="500"
                   height="310"
@@ -315,8 +317,8 @@
                   <ul class="container-section-four-ul">
                     <li class="container-section-four-li">HTML - Зроблено на високому рівні;</li>
                     <li class="container-section-four-li">CSS - Зроблено на високому рівні;</li>
-                    <li class="container-section-four-li">JavaScript - Зроблено на високому рівні;</li>
-                      <a class="container-section-four-a" href="https://ljresetl.github.io/barbershop/" target="_blank">GitHub - Посилання на репозиторій</a>
+                    <li class="container-section-four-li">JavaScript - частково;</li>
+                      <a class="container-section-four-a" href="https://github.com/ljresetl/Neway-Grup" target="_blank">GitHub - Посилання на репозиторій</a>
                   </ul>
                 </div> 
             
@@ -857,6 +859,85 @@
         <p class="resume-p">Знайти можливість реалізувати себе в команді розробників, рости професійно та брати участь у створенні сучасних вебрішень.</p>
       </div>
   </div>
+
+  <!-- кнопка зворотного звязку -->
+  <div class="modal-overlay">
+    <div class="modal">
+
+        <button type="button" class="modal-close">
+            <svg class="button-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Залиш свої контакти і ми з вами обов'язково зв'яжемось</p>
+
+
+        <form class="modal-form">
+
+            <div class="input-wrapper">
+                <label class="modal-label" for="user-name">Ім'я</label>
+                <div class="div-input-icon">
+
+                    <input type="text" name="user-name" id="user-name" class="modal-input">
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="input-wrapper">
+                <label class="modal-label" for="phone">Номер телефону</label>
+                <div class="div-input-icon">
+
+                    <input type="tel" name="phone" id="phone" class="modal-input">
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="input-wrapper">
+                <label class="modal-label" for="Email">Email</label>
+                <div class="div-input-icon">
+
+                    <input type="email" name="Email" id="Email" class="modal-input">
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="div-comment">
+
+                <label class="modal-label" for="user-comment">Коментар</label>
+                <textarea id="user-comment" name="user-comment" class="modal-textarea"
+                    placeholder="Text input"></textarea>
+
+
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="user-privacy" name="user-privacy" class="input-check visually-hidden"
+                    value="true">
+                <label class="modal-checkbox-label" for="user-privacy">
+                    <span class="label-span">
+                        <svg class="icon-vector" width="10" height="8">
+                            <use href="./images/icons.svg#icon-vector"></use>
+                        </svg>
+                    </span>I accept the terms and conditions of the
+                    <a href="#" class="privacy-policy">Privacy Policy</a>
+                </label>
+            </div>
+
+
+
+
+            <button type="submit" class="modal-button">Send</button>
+
+        </form>
+
+    </div>
+</div>
 
 <!-- кнопка прокрутки -->
    <div class="scroll-buttons">

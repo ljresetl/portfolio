@@ -138,55 +138,77 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
- // -------------------------------
-// Показ резюме зверху поверх сайту
-// -------------------------------
-const resume = document.getElementById('resume');
-const resumeLink = document.querySelector('.show-resume');
+  // -------------------------------
+  // Показ резюме зверху поверх сайту
+  // -------------------------------
+  const resume = document.getElementById('resume');
+  const resumeLink = document.querySelector('.show-resume');
 
-// Кнопка закриття
-if (resume && !resume.querySelector('.close-resume')) {
-  const closeBtn = document.createElement('button');
-  closeBtn.textContent = '×';
-  closeBtn.className = 'close-resume';
-  Object.assign(closeBtn.style, {
-    position: 'absolute',
-    top: '10px',
-    right: '20px',
-    fontSize: '24px',
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    color: '#333',
-    zIndex: 10000,
-  });
-  resume.appendChild(closeBtn);
+  if (resume && !resume.querySelector('.close-resume')) {
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = '×';
+    closeBtn.className = 'close-resume';
+    Object.assign(closeBtn.style, {
+      position: 'absolute',
+      top: '10px',
+      right: '20px',
+      fontSize: '24px',
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      color: '#333',
+      zIndex: 10000,
+    });
+    resume.appendChild(closeBtn);
 
-  closeBtn.addEventListener('click', () => {
-    resume.style.display = 'none';
-    document.removeEventListener('mousedown', outsideClickListener);
-  });
-}
-
-// Функція для закриття при кліку поза межами резюме
-function outsideClickListener(e) {
-  if (resume && !resume.contains(e.target)) {
-    resume.style.display = 'none';
-    document.removeEventListener('mousedown', outsideClickListener);
+    closeBtn.addEventListener('click', () => {
+      resume.style.display = 'none';
+      document.removeEventListener('mousedown', outsideClickListener);
+    });
   }
-}
 
-if (resume && resumeLink) {
-  resumeLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    resume.style.display = 'block';
-    resume.scrollTop = 0;
+  function outsideClickListener(e) {
+    if (resume && !resume.contains(e.target)) {
+      resume.style.display = 'none';
+      document.removeEventListener('mousedown', outsideClickListener);
+    }
+  }
 
-    // Додаємо слухача кліків поза блоком
-    setTimeout(() => {
-      document.addEventListener('mousedown', outsideClickListener);
-    }, 0); // Затримка потрібна, щоб не одразу закрилось після кліку по кнопці
+  if (resume && resumeLink) {
+    resumeLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      resume.style.display = 'block';
+      resume.scrollTop = 0;
+
+      setTimeout(() => {
+        document.addEventListener('mousedown', outsideClickListener);
+      }, 0);
+    });
+  }
+
+// -------------------------------
+// Модальне вікно зворотного зв'язку (через is-open)
+// -------------------------------
+const modalOverlay = document.querySelector('.modal-overlay');
+const openModalBtn = document.querySelector('.one-button');
+const closeModalBtn = document.querySelector('.modal-close');
+
+if (modalOverlay && openModalBtn && closeModalBtn) {
+  openModalBtn.addEventListener('click', () => {
+    modalOverlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modalOverlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  });
+
+  modalOverlay.addEventListener('click', (event) => {
+    if (event.target === modalOverlay) {
+      modalOverlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
   });
 }
-
 });
