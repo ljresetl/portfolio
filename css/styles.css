@@ -561,9 +561,25 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
+  .container-section-four-scroll-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container-section-four-ul-all > div {
+    min-width: 30%;
+    flex-shrink: 0;
+    flex: 0 0 31%; /* кожен блок займає 31% ширини контейнера */
+    scroll-snap-align: start; /* прилипає до початку при прокрутці */
+    /* box-sizing: border-box; */
+  }
+
   .container-section-four-ul-all {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     display: flex;
     flex-direction: row;
+    gap: 40px;
   }
 
   img {
@@ -917,20 +933,19 @@ section {
 /* CSS: позиціонуємо кнопку і ховаємо за замовчуванням */
 .scroll-buttons {
   position: fixed;
-  bottom: 20px; /* відступ від низу */
+  top: 20px; /* відступ від низу */
   right: 20px; /* відступ від правого краю */
   z-index: 1000;
 }
 
 .scroll-btn {
   display: none; /* ховаємо кнопку спочатку */
-  padding: 10px 15px;
+  padding: 10px 40px;
   font-size: 1.5rem;
-  background: linear-gradient(135deg, #993e90, #ab65b3);
-  color: #f2f2f2;
+  background: linear-gradient(135deg, #e672da, #de74ea);
+  color: #1e1b1b;
   border: none;
-  border-radius: 50%;
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10%;
   transition: opacity 0.3s ease;
 }
 

@@ -105,6 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
     loadMoreBtn.addEventListener('click', showNextItems);
   }
 });
+// Кнопка скрол вправо і вліво container-section-four-ul-project
+const scrollContainer = document.getElementById('projects-container');
+const scrollBtn = document.getElementById('scrollNextBtn');
+
+scrollBtn.addEventListener('click', () => {
+  const scrollAmount = scrollContainer.offsetWidth * 0.1; // враховано ширину одного блоку
+
+  if (scrollContainer.scrollLeft + scrollAmount >= scrollContainer.scrollWidth - scrollAmount) {
+    scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+});
 
 // Кнопка "вгору" після 10% скролу сторінки
 (function () {
