@@ -202,6 +202,10 @@ section {
   gap: 20px;
 }
 /* section-header Секція хедер */
+.svg-logo {
+  background-color: transparent;
+  fill: #9d0944;
+}
 /* main-foto Секція головного фото */
 .container-main-foto {
   font-size: 45px;
