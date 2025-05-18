@@ -228,6 +228,10 @@ section {
   padding-bottom: 80px;
 }
 
+.one-button {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     min-width: 1024px;
@@ -331,6 +335,8 @@ section {
 /* section-one Секція один */
 
 .container-section-one-h {
+  font-weight: 300;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -357,7 +363,6 @@ section {
 
   .container-section-one-h {
     margin: 0px;
-    font-weight: 300;
     font-size: 26px;
   }
 }
@@ -365,6 +370,12 @@ section {
 .container-section-two {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.container-section-two-p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 1024px) {
