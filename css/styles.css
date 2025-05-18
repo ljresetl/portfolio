@@ -1146,11 +1146,11 @@ section {
 }
 
 .modal-input:focus {
-  border-color: #4d5ae5;
+  border-color: #4db5b5;
 }
 
 .modal-input:focus + .input-icon {
-  fill: #4d5ae5;
+  fill: #469b9b;
 }
 
 .input-icon {
@@ -1164,7 +1164,7 @@ section {
 }
 
 .input-icon:focus {
-  fill: #4d5ae5;
+  fill: #49bdbb;
 }
 
 .modal-input::placeholder {
@@ -1199,7 +1199,7 @@ section {
 }
 
 .modal-textarea:focus {
-  border-color: #4d5ae5;
+  border-color: #4abbbb;
 }
 
 .modal-textarea::placeholder {
@@ -1254,7 +1254,7 @@ section {
 }
 
 .input-check:checked + .modal-checkbox-label .label-span {
-  background-color: #404bbf;
+  background-color: #50c0af;
   border: none;
   fill: #f4f4fd;
 }
@@ -1276,7 +1276,7 @@ section {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #4d5ae5;
+  color: #4ca3aa;
 }
 
 /* Кнопка */
@@ -1285,7 +1285,7 @@ section {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  background: #428d93;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -1301,9 +1301,9 @@ section {
 }
 
 .modal-button:hover {
-  background: #404bbf;
+  background: #2894a0;
 }
 
 .modal-button:focus {
-  background: #404bbf;
+  background: #22776d;
 }
