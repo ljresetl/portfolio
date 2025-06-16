@@ -186,29 +186,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-// -------------------------------
-// Модальне вікно зворотного зв'язку (через is-open)
-// -------------------------------
-const modalOverlay = document.querySelector('.modal-overlay');
-const openModalBtn = document.querySelector('.one-button');
-const closeModalBtn = document.querySelector('.modal-close');
+  // -------------------------------
+  // Модальне вікно зворотного зв'язку (через is-open)
+  // -------------------------------
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const openModalBtn = document.querySelector('.one-button');
+  const closeModalBtn = document.querySelector('.modal-close');
 
-if (modalOverlay && openModalBtn && closeModalBtn) {
-  openModalBtn.addEventListener('click', () => {
-    modalOverlay.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-  });
+  if (modalOverlay && openModalBtn && closeModalBtn) {
+    openModalBtn.addEventListener('click', () => {
+      modalOverlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
 
-  closeModalBtn.addEventListener('click', () => {
-    modalOverlay.classList.remove('is-open');
-    document.body.style.overflow = '';
-  });
-
-  modalOverlay.addEventListener('click', (event) => {
-    if (event.target === modalOverlay) {
+    closeModalBtn.addEventListener('click', () => {
       modalOverlay.classList.remove('is-open');
       document.body.style.overflow = '';
-    }
-  });
-}
+    });
+
+    modalOverlay.addEventListener('click', (event) => {
+      if (event.target === modalOverlay) {
+        modalOverlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // -------------------------------
+  // Обробка відправки форми зворотного зв'язку
+  // -------------------------------
+  const form = document.querySelector('.modal-form');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          alert('Дякуємо! Ваші дані надіслані.');
+          form.reset();
+          // Можна також закрити модалку автоматично:
+          if (modalOverlay) {
+            modalOverlay.classList.remove('is-open');
+            document.body.style.overflow = '';
+          }
+        } else {
+          alert('Виникла помилка при відправці форми. Спробуйте пізніше.');
+        }
+      } catch (error) {
+        alert('Помилка мережі. Спробуйте пізніше.');
+      }
+    });
+  }
 });
