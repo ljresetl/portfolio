@@ -221,6 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      const privacyCheckbox = form.querySelector('#user-privacy');
+      if (!privacyCheckbox || !privacyCheckbox.checked) {
+        alert('Будь ласка, прийміть умови Приватної політики перед відправкою.');
+        privacyCheckbox?.focus();
+        return;
+      }
+
       const formData = new FormData(form);
 
       try {
