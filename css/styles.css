@@ -649,16 +649,16 @@ section {
   }
 
   .container-section-four-a:hover {
-    color: rgba(255, 105, 180, 0.6);
+    color: rgba(77, 50, 64, 0.6);
   }
   /* Еффект рожевого вогню four-section-image-container початок */
-  .four-section-image-container {
+  /* .four-section-image-container {
     position: relative;
     max-width: 600px;
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); /* рожеве світіння */
+    box-shadow: 0 0 30px rgba(88, 67, 78, 0.6);
     animation: pinkFlame 2s infinite ease-in-out;
     transition: box-shadow 0.3s ease;
     z-index: 1;
@@ -677,7 +677,7 @@ section {
       box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
         0 0 30px rgba(255, 105, 180, 0.3);
     }
-  }
+  } */
   /* Еффект рожевого вогню four-section-image-container кінець */
 }
 
@@ -739,13 +739,13 @@ section {
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); /* рожеве світіння */
+    /* box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); */
     animation: pinkFlame 2s infinite ease-in-out;
     transition: box-shadow 0.3s ease;
     z-index: 1;
   }
 
-  @keyframes pinkFlame {
+  /* @keyframes pinkFlame {
     0% {
       box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
         0 0 30px rgba(255, 105, 180, 0.3);
@@ -758,7 +758,7 @@ section {
       box-shadow: 0 0 15px rgba(255, 105, 180, 0.6),
         0 0 30px rgba(255, 105, 180, 0.3);
     }
-  }
+  } */
 
   /* Еффект рожевого вогню навкруги project-item кінець */
 
