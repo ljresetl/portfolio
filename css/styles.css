@@ -170,6 +170,10 @@ section {
   color: #22343d;
 }
 
+/* .mobile-menu-link-resume {
+  max-width: 80%;
+} */
+
 .mobile-menu-social-list {
   display: flex;
   flex-direction: row;

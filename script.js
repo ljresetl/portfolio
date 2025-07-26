@@ -11,19 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollUpBtn = document.querySelector('.scroll-btn.up');
   const scrollDownBtn = document.querySelector('.scroll-btn.down');
 
-  burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('open');
-    mobileMenuOverlay.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    if (scrollButtons) scrollButtons.style.display = 'none';
-  });
-
   function closeMobileMenu() {
     mobileMenu.classList.remove('open');
     mobileMenuOverlay.style.display = 'none';
     document.body.style.overflow = 'auto';
     if (scrollButtons) scrollButtons.style.display = 'flex';
   }
+
+  burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+    mobileMenuOverlay.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    if (scrollButtons) scrollButtons.style.display = 'none';
+  });
 
   closeBtn.addEventListener('click', closeMobileMenu);
   mobileMenuOverlay.addEventListener('click', closeMobileMenu);
@@ -142,7 +142,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Показ резюме зверху поверх сайту
   // -------------------------------
   const resume = document.getElementById('resume');
-  const resumeLink = document.querySelector('.show-resume');
+  const resumeLinks = document.querySelectorAll('.show-resume');
+
+  function outsideClickListener(e) {
+    if (resume && !resume.contains(e.target)) {
+      resume.style.display = 'none';
+      document.removeEventListener('mousedown', outsideClickListener);
+    }
+  }
 
   if (resume && !resume.querySelector('.close-resume')) {
     const closeBtn = document.createElement('button');
@@ -167,27 +174,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function outsideClickListener(e) {
-    if (resume && !resume.contains(e.target)) {
-      resume.style.display = 'none';
-      document.removeEventListener('mousedown', outsideClickListener);
-    }
-  }
+  if (resume && resumeLinks.length > 0) {
+    resumeLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        resume.style.display = 'block';
+        resume.scrollTop = 0;
 
-  if (resume && resumeLink) {
-    resumeLink.addEventListener('click', function (event) {
-      event.preventDefault();
-      resume.style.display = 'block';
-      resume.scrollTop = 0;
+        setTimeout(() => {
+          document.addEventListener('mousedown', outsideClickListener);
+        }, 0);
 
-      setTimeout(() => {
-        document.addEventListener('mousedown', outsideClickListener);
-      }, 0);
+        // Закриваємо мобільне меню, якщо відкрито
+        closeMobileMenu?.();
+      });
     });
   }
 
   // -------------------------------
-  // Модальне вікно зворотного зв'язку (через is-open)
+  // Модальне вікно зворотного зв'язку
   // -------------------------------
   const modalOverlay = document.querySelector('.modal-overlay');
   const openModalBtn = document.querySelector('.one-button');
@@ -213,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------------------------------
-  // Обробка відправки форми зворотного зв'язку
+  // Обробка форми зворотного зв'язку
   // -------------------------------
   const form = document.querySelector('.modal-form');
 
@@ -242,7 +247,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           alert('Дякуємо! Ваші дані надіслані.');
           form.reset();
-          // Можна також закрити модалку автоматично:
           if (modalOverlay) {
             modalOverlay.classList.remove('is-open');
             document.body.style.overflow = '';
