@@ -581,7 +581,9 @@ section {
 }
 
 .container-section-four-figma-www {
-  color: #bc19ce;
+  color: #b701ff;
+  font-weight: 400;
+  font-size: 26px;
 }
 
 .project-list,
